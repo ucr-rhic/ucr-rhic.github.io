@@ -31,8 +31,12 @@ Meeting Summary
 
 
 
+STAR How-Tos
+-------------------
 
+- [How to get file list](how-tos/get_file_list.md)
 
+- [How use NX/NoMachine to connect to RCF](how-tos/rcf_remote_login.md)
 
 
 
@@ -43,7 +47,21 @@ Meeting Summary
 Resources
 ---------
 
+- STAR mailing lists:[here](https://www.star.bnl.gov/central/lists/)
 
+- STAR Make Class References: [Here](https://www.star.bnl.gov/webdata/dox/html/index.html)
+
+- Shift sign-up page: [here](https://online.star.bnl.gov/)
+
+- Disk usage status: [here](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
+
+- Mattermost Chat Site: [here](https://chat.sdcc.bnl.gov/login)
+
+- STAR Theses Repository: [here](https://drupal.star.bnl.gov/STAR/theses)
+
+- STAR Notes Drupal Page: [here](https://drupal.star.bnl.gov/STAR/starnotes)
+
+- STAR Github Repository: [here](https://github.com/star-bnl)
 
 
 
