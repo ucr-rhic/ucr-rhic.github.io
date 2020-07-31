@@ -47,4 +47,4 @@ Downloads -> Enterprise Products Evaluation -> NoMachine Enterprise Client
 
 8. Specify any general name for the connection and click on the Done button.
 
-9. Connect and login with the RACF kerberos credentials. Click on the New desktop - select either GNOME/KDE virtual desktop and proceed. I had to use GNOME. KDE did not work for me.
+9. Connect and login with the RACF kerberos credentials. Click on the New desktop, select KDE virtual desktop and proceed.

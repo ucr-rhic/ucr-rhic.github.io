@@ -51,9 +51,9 @@ Resources
 
 - STAR Make Class References: [Here](https://www.star.bnl.gov/webdata/dox/html/index.html)
 
-- Shift sign-up page: [here](https://online.star.bnl.gov/)
+- Shift Sign-Up Page: [here](https://online.star.bnl.gov/)
 
-- Disk usage status: [here](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
+- Disk Usage Status: [here](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
 
 - Mattermost Chat Site: [here](https://chat.sdcc.bnl.gov/login)
 
