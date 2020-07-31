@@ -24,7 +24,7 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
-- [**July 24, 2020**](meeting/July24_20.md)
+- [**July 24, 2020**](meetings/July24_20.md)
 
 
 
