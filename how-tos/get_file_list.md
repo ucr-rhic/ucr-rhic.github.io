@@ -10,8 +10,8 @@ Syntax:
  get_file_list.pl -keys 'path,filename' -cond 'storage=XX,filetype=XX,filename~XX, production=XX,trgsetupname=XX' -limit NN -distinct -delim '/'
 ```
 - `storage` can be `local (/home/starlib/…)`, `NFS (/star/dataXX/…)`, `HPSS (/home/starreco/reco/...)` (case insensitive) 
-- `filetype` is (probably)  `daq_reco_event`, `daq_reco_muDst` or `daq_reco_picoDst` depending on whether you want to use DST, Micro DST or Pico DST reconstruted files.
-  - PicoDst page is [here] (https://drupal.star.bnl.gov/STAR/blog/gnigmat/picodst-format)
+- `filetype` is  `daq_reco_event`, `daq_reco_muDst` or `daq_reco_picoDst` depending on whether you want to use DST, Micro DST or Pico DST reconstruted files.
+  - PicoDst page is [here](https://drupal.star.bnl.gov/STAR/blog/gnigmat/picodst-format)
 - `production` and `library` can be found on data production options [page](https://www.star.bnl.gov/devcgi/dbProdOptionRetrv.pl).
 - `trgsetupname` can be found on production options [page](https://www.star.bnl.gov/devcgi/dbProdOptionRetrv.pl), summary [page](https://www.star.bnl.gov/public/comp/prod/DataSummary.html) or production [page](https://drupal.star.bnl.gov/STAR/comp/prod).
 
