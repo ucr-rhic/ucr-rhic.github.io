@@ -25,6 +25,7 @@ Meeting Summary
 -----------------
 
 - [July 24, 2020](meetings/July24_20.md)
+- [July 31, 2020](meetings/July31_20.md)
 
 
 
