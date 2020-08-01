@@ -41,8 +41,9 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
-- [July 24, 2020](meetings/July24_20.md)
 - [July 31, 2020](meetings/July31_20.md)
+- [July 24, 2020](meetings/July24_20.md)
+
 
 
 
@@ -52,7 +53,7 @@ Meeting Summary
 STAR How-Tos
 -------------------
 
-- [How to Get a computer account in STAR](https://drupal.star.bnl.gov/STAR/comp/sofi/facility-access/general-access)
+- [How to get a computer account in STAR](https://drupal.star.bnl.gov/STAR/comp/sofi/facility-access/general-access)
 - [How to get file list](how-tos/get_file_list.md)
 - [How use NX/NoMachine to connect to RCF](how-tos/rcf_remote_login.md)
 
