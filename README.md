@@ -1,5 +1,22 @@
-Experimental Nuclear Physics Group at UCR 
+Heavy Ion & Spin Physics Group at UCR
 ===================================================
+
+Current Group Members
+-----------------------
+**Spin Physics**
+- [Kenneth Barish](https://profiles.ucr.edu/app/home/profile/barish)
+- [Latiful Kabir](https://profiles.ucr.edu/app/home/profile/mdlatifk)
+- [David Kapukchyan](https://profiles.ucr.edu/app/home/profile/dkapu001)
+- [William Baker](https://profiles.ucr.edu/app/home/profile/wbake004)
+- [Xilin Liang](https://profiles.ucr.edu/app/home/profile/xlian046)
+
+**Heavy Ion**
+- [Richard Seto](https://profiles.ucr.edu/app/home/profile/seto)
+- [Yang Wu](https://profiles.ucr.edu/app/home/profile/yangw)
+- [Liankun Zou](https://profiles.ucr.edu/app/home/profile/lzou001)
+- [Ding Chen](https://profiles.ucr.edu/app/home/profile/dchen087)
+- [Cameron Racz](https://profiles.ucr.edu/app/home/profile/cracz001)
+- [Erik Loyd](https://profiles.ucr.edu/app/home/profile/eloyd001)
 
 
 Weekly Group Meeting
@@ -35,8 +52,8 @@ Meeting Summary
 STAR How-Tos
 -------------------
 
+- [How to Get a computer account in STAR](https://drupal.star.bnl.gov/STAR/comp/sofi/facility-access/general-access)
 - [How to get file list](how-tos/get_file_list.md)
-
 - [How use NX/NoMachine to connect to RCF](how-tos/rcf_remote_login.md)
 
 
@@ -48,21 +65,14 @@ STAR How-Tos
 Resources
 ---------
 
-- STAR mailing lists:[here](https://www.star.bnl.gov/central/lists/)
-
-- STAR Make Class References: [Here](https://www.star.bnl.gov/webdata/dox/html/index.html)
-
-- Shift Sign-Up Page: [here](https://online.star.bnl.gov/)
-
-- Disk Usage Status: [here](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
-
-- Mattermost Chat Site: [here](https://chat.sdcc.bnl.gov/login)
-
-- STAR Theses Repository: [here](https://drupal.star.bnl.gov/STAR/theses)
-
-- STAR Notes Drupal Page: [here](https://drupal.star.bnl.gov/STAR/starnotes)
-
-- STAR Github Repository: [here](https://github.com/star-bnl)
+- [STAR mailing lists](https://www.star.bnl.gov/central/lists/)
+- [STAR Make Class References](https://www.star.bnl.gov/webdata/dox/html/index.html)
+- [Shift Sign-Up Page](https://online.star.bnl.gov/)
+- [Disk Usage Status](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
+- [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
+- [STAR Theses Repository](https://drupal.star.bnl.gov/STAR/theses)
+- [STAR Notes Drupal Page](https://drupal.star.bnl.gov/STAR/starnotes)
+- [STAR Github Repository](https://github.com/star-bnl)
 
 
 
