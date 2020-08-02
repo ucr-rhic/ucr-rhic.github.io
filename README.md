@@ -67,7 +67,7 @@ Resources
 ---------
 
 - [STAR mailing lists](https://www.star.bnl.gov/central/lists/)
-- [STAR Make Class References](https://www.star.bnl.gov/webdata/dox/html/index.html)
+- [STAR Maker Class References](https://www.star.bnl.gov/webdata/dox/html/index.html)
 - [Shift Sign-Up Page](https://online.star.bnl.gov/)
 - [Disk Usage Status](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
