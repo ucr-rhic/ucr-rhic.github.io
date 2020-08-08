@@ -3,8 +3,7 @@ Adding Entry to The UCR Github Page
 
 - The UCR Github web page address is [`ucr-rhic.github.io`](https://ucr-rhic.github.io). And the corresponding Github repository is [`https://github.com/ucr-rhic/ucr-rhic.github.io`](https://github.com/ucr-rhic/ucr-rhic.github.io). You always update or modify the Github repository and the changes will be automatically applied to the Github web page within a couple of minutes.
 
-- Any text file written in Markdown format will be translated to web pages. Markdown is a very easy/intuitive text-based format. Markdown files are generally given `.md` as extension.  Knowing the very few basic syntax will be sufficient in our case. For example, compare this page to it's raw version here [https://raw.githubusercontent.com/ucr-rhic/ucr-rhic.github.io/master/how-tos/adding_entry_for_ucr_page.md].
-
+- Any text file written in Markdown format will be translated to web pages. Markdown is a very easy/intuitive text-based format. Markdown files are generally given `.md` as extension.  Knowing the very few basic syntax will be sufficient in our case. For example, compare this current page to it's raw version [here](https://raw.githubusercontent.com/ucr-rhic/ucr-rhic.github.io/master/how-tos/adding_entry_for_ucr_page.md).
 
 - There are two ways you can add an entry or modify an existing entry to the UCR Github page.
 The first approach does not require any prior knowledge of `git`, I will call it `non-git user's` approach. The other approach assumes you are a git user who is familiar with the `git` commands. In both cases, you need to have a Github account and the account should be added to this repository as a collaborator.
