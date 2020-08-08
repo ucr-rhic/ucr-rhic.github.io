@@ -14,13 +14,13 @@ Non-git User's Approach
 
 - Go to the UCR Github repository [here](https://github.com/ucr-rhic/ucr-rhic.github.io) and login to your Github account.
 
-**Modifying Existing Page**
+**Modifying Existing File**
 - The `README.md` file in the top directory is translated as the main page. If you want to modify the main page or any other existing page, follow these steps:
 
   - Click on the README.md file (to modify main page) or any other existing `.md` file.  
   - Click on `edit this file` icon on the top right (represented with a pen symbol). 
   - Now make your changes. 
-  - Commit changes when you are done by pressing the green button.
+  - Commit changes when you are done by pressing the green button in the lower left.
 
 
 **Adding New File**
