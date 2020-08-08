@@ -17,7 +17,7 @@ Syntax:
 
 A frequently used use case is 
 ```
-$ get_file_list.pl -keys 'path,filename' -cond 'storage=hpss,filetype=daq_reco_muDst,filename~st_physics,production=P11id,trgsetupname=AuAu19_production' -limit 10 -distinct -delim '/'
+$ get_file_list.pl -keys 'path,filename' -cond 'storage!=hpss,filetype=daq_reco_muDst,filename~st_physics,production=P11id,trgsetupname=AuAu19_production' -limit 10 -distinct -delim '/'
 ```
 Use `storage=local` to search file locally. 
 
@@ -38,3 +38,9 @@ get_file_list.pl -keys 'path,filename' -cond 'production=P11id,filetype=daq_reco
 - The basic idea is you always check it locally (on NFS directory) with `storage!=hpss`, if it is not available, then you try with `storage=hpss`. This is because you do not want to duplicate restoring file if it already exists. If you use, it will search under first `local`, and second under `NFS` directories.  If utility is designed to search local first, then NFS, then HPSS no matter what flag you use.
 
 - Sometimes it is useful to enable the flag `-key 'storage, ...'` to understand if a file is really located under local, NFS or tape. Similarly, sometimes the `events` flag will tell you number of events before you restore that file.
+
+- Use `-limit 0` to get all files.
+
+- If the file path starts with `/home/starlib/`, then it means it is located on the distributed disk (aka DD). To access files (using `root`) located on the distributed disk, you need to use `root://xrdstar.rcf.bnl.gov:1095/` as the prefix. If the file path starts with `/home/stareco/reco/`, then it means the file is located on HPSS.
+
+- You can not navigate DD, but the file can be accessed using `root`. On the other hand, files on the HPSS can not be accessed until you restore it.

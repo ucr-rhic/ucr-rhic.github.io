@@ -1,4 +1,4 @@
-Heavy Ion & Spin Physics Group at UCR
+[Heavy Ion & Spin Physics Group at UCR](https://physics.ucr.edu/heavy-ion-spin-physics)
 ===================================================
 
 Current Group Members
@@ -41,6 +41,7 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
+- [Aug 07, 2020](meetings/Aug07_20.md)
 - [July 31, 2020](meetings/July31_20.md)
 - [July 24, 2020](meetings/July24_20.md)
 
@@ -53,12 +54,10 @@ Meeting Summary
 STAR How-Tos
 -------------------
 
+- [How to modify UCR Github page content](how-tos/adding_entry_for_ucr_page.md)
 - [How to get a computer account in STAR](https://drupal.star.bnl.gov/STAR/comp/sofi/facility-access/general-access)
 - [How to get file list](how-tos/get_file_list.md)
 - [How use NX/NoMachine to connect to RCF](how-tos/rcf_remote_login.md)
-
-
-
 
 
 

@@ -39,7 +39,7 @@ Downloads -> Enterprise Products Evaluation -> NoMachine Enterprise Client
 
 4. Select the 'SSH protocol' option
 
-5. Enter Host - localhost / Port - port number chosen when setting up the tunnel. In part-1 example, the port number is set to 7025.
+5. Enter Host - `localhost` and Port - `the port number chosen when setting up the tunnel`. In part-1 example, the port number is set to 7025.
 
 6. Authenticate using the 'Password' option
 
