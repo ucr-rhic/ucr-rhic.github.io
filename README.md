@@ -1,4 +1,4 @@
-[Heavy Ion & Spin Physics Group at UCR](https://physics.ucr.edu/heavy-ion-spin-physics)
+[**Heavy Ion & Spin Physics Group at UCR**](https://physics.ucr.edu/heavy-ion-spin-physics)
 ===================================================
 
 Current Group Members
