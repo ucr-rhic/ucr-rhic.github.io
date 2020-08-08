@@ -19,7 +19,7 @@ Non-git User's Approach
 
   - Click on the README.md file (to modify main page) or any other existing `.md` file.  
   - Click on `edit this file` icon on the top right (represented with a pen symbol). 
-  - Now make your changes. 
+  - Now make your changes. Check preview to ensure it looks as expected.
   - Commit changes when you are done by pressing the green button in the lower left.
 
 
@@ -28,8 +28,8 @@ Non-git User's Approach
 - Go to the appropriate directory.
 - Add file > Create New file
 - Give the file an appropriate name with `.md` extension.
-- Enter the content of the file using Markdown syntax.
-- Commit changes.
+- Enter the content of the file using Markdown syntax. Check preview to ensure it looks as expected.
+- Commit changes by pressing the lower green button.
 - Link your newly created file to the main `README.md` file in the top directory following the instruction in the previous paragraph.
 
 
