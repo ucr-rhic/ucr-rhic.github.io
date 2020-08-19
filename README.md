@@ -9,6 +9,7 @@ Current Group Members
 - [David Kapukchyan](https://profiles.ucr.edu/app/home/profile/dkapu001)
 - [William Baker](https://profiles.ucr.edu/app/home/profile/wbake004)
 - [Xilin Liang](https://profiles.ucr.edu/app/home/profile/xlian046)
+- [Ananya Paul](https://profiles.ucr.edu/app/home/profile/apaul029)
 
 **Heavy Ion**
 - [Richard Seto](https://profiles.ucr.edu/app/home/profile/seto)
@@ -41,6 +42,7 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
+- [Aug 14, 2020](meetings/Aug14_20.md)
 - [Aug 07, 2020](meetings/Aug07_20.md)
 - [July 31, 2020](meetings/July31_20.md)
 - [July 24, 2020](meetings/July24_20.md)
