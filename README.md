@@ -3,6 +3,7 @@
 
 Current Group Members
 -----------------------
+
 **Spin Physics**
 - [Kenneth Barish](https://profiles.ucr.edu/app/home/profile/barish)
 - [Latiful Kabir](https://profiles.ucr.edu/app/home/profile/mdlatifk)
@@ -42,6 +43,7 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
+- [Aug 28, 2020](meetings/Aug28_20.md)
 - [Aug 21, 2020](meetings/Aug21_20.md)
 - [Aug 14, 2020](meetings/Aug14_20.md)
 - [Aug 07, 2020](meetings/Aug07_20.md)
