@@ -43,6 +43,7 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
+- [Sep 04, 2020](meetings/Sep4_20.md)
 - [Aug 28, 2020](meetings/Aug28_20.md)
 - [Aug 21, 2020](meetings/Aug21_20.md)
 - [Aug 14, 2020](meetings/Aug14_20.md)
@@ -70,6 +71,7 @@ STAR How-Tos
 Resources
 ---------
 
+- [Beam Use Request (BUR) for Runs 21, 23 and data taking in 2023 - 25](https://drupal.star.bnl.gov/STAR/files/BUR2020_final.pdf)
 - [STAR mailing lists](https://www.star.bnl.gov/central/lists/)
 - [STAR Maker Class References](https://www.star.bnl.gov/webdata/dox/html/index.html)
 - [Shift Sign-Up Page](https://online.star.bnl.gov/)
