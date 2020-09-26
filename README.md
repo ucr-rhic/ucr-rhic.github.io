@@ -96,7 +96,8 @@ Learn About STAR Detectors
 Learn About STAR Data Analysis
 ---------------------------------
 
-**Collaboration Meeting Tutorials:** Every STAR collaboration meeting usually has tutorials/presentations on `STAR Data Analysis` during the juniors Day. Here are some collections :
+**Collaboration Meeting Tutorials:** Every STAR collaboration meeting usually has tutorials/presentations on `STAR Data Analysis` during the juniors day. Here are some collections :
+
 Note: After you click on the link, you might need to log-in to drupal first in order to see the presentations.
 
 (Ordered from Intro to Advanced)
