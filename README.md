@@ -43,6 +43,7 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
+- [Sep 25, 2020](meetings/Sep25_20.md)
 - [Sep 18, 2020](meetings/Sep18_20.md)
 - [Sep 11, 2020](meetings/Sep11_20.md)
 - [Sep 04, 2020](meetings/Sep4_20.md)
@@ -68,6 +69,35 @@ STAR How-Tos
 - [How use NX/NoMachine to connect to RCF](how-tos/rcf_remote_login.md)
 
 
+Learn About STAR Detectors
+----------------------------
+
+- [NIM papers for all STAR detectors](https://www.star.bnl.gov/public/tpc/NimPapers/index.htm).
+- [STAR PID NIM Paper](https://arxiv.org/abs/nucl-ex/0505026v2)
+- Detector Expert's Presentation (with video) for Juniors Meeting:
+  - [TPC](https://drupal.star.bnl.gov/STAR/event/2020/06/11/star-juniors-detector-meeting-tpc)
+  - [EPD](https://youtu.be/OfJTq5cFe4U)
+  - [BEMC](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting-september-2020/juniors-day/star-barrel-calorimeter-and-shower-ma)
+
+- Event Display: Here are some links to the STAR event-displays that could be useful for visualization. These can be complementary to other reading materials for understanding how STAR detectors work. Most of the event displays are interactive (allow zooming-in and looking from various angles):
+ - [STAR interactive detectors](https://nsww.org/projects/bnl/star/sub-systems.php)
+ - [STAR live event display](https://online.star.bnl.gov/aggregator/livedisplay/)
+ - [Dmitry's event display](https://www.star.bnl.gov/~dmitry/edisplay/)
+
+Learn About STAR Data Analysis
+---------------------------------
+
+- **Collaboration Meeting Tutorials:** Every STAR collaboration meeting usually has tutorials/presentations on `STAR Data Analysis` during the juniors Day. Here are some collections (ordered from intro to advanced):
+
+Note: After you click on the link, you might need to log-in to drupal first in order to see the presentations.
+
+  - [Starting Data Analysis on STAR](http://nuclear.ucdavis.edu/~brovko/GettingStarted.pdf)
+  - [Basics of a STAR analysis (with source code)](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting/afternoon-session/star-software-101)
+  - [MuDst Tutorial](http://rnc.lbl.gov/~jhthomas/public/MuDstTutorial06.pdf)
+  - [A common-MuDst tutorial](https://www.star.bnl.gov/public/comp/meet/RM200311/MuDstTutorial.pdf)
+  - [Introduction to STAR software and makers](https://nsww.org/projects/bnl/star/docs/STAR_soft_BNL_LK_2015_6_1.pdf)
+  - [Introduction to PicoDst](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting-19-23-august-2019-cracow-poland/juniors-day/introduction-picodst)	
+  - [The STAR Scheduler (SUMS)](https://drupal.star.bnl.gov/STAR/system/files/The_STAR_Scheduler_V8.pdf)
 
 
 Resources
