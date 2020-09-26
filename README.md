@@ -72,17 +72,21 @@ STAR How-Tos
 Learn About STAR Detectors
 ----------------------------
 
-- [NIM papers for all STAR detectors](https://www.star.bnl.gov/public/tpc/NimPapers/index.htm).
-- [STAR PID NIM Paper](https://arxiv.org/abs/nucl-ex/0505026v2)
-- Detector Expert's Presentation (with video) for Juniors Meeting:
+(Ordered from Intro to Advanced)
+
+- **Event Display:** Following are some links to the STAR event-displays that could be useful for visualization. These can be complementary to other reading materials for understanding how STAR detectors work. Most of the event displays are interactive (allow zooming-in and looking from various angles):
+  - [STAR interactive detectors](https://nsww.org/projects/bnl/star/sub-systems.php)
+  - [STAR live event display](https://online.star.bnl.gov/aggregator/livedisplay/)
+  - [Dmitry's event display](https://www.star.bnl.gov/~dmitry/edisplay/)
+
+- **Detector Expert's Presentation (with video) from Juniors Meeting:**
   - [TPC](https://drupal.star.bnl.gov/STAR/event/2020/06/11/star-juniors-detector-meeting-tpc)
   - [EPD](https://youtu.be/OfJTq5cFe4U)
   - [BEMC](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting-september-2020/juniors-day/star-barrel-calorimeter-and-shower-ma)
 
-- Event Display: Here are some links to the STAR event-displays that could be useful for visualization. These can be complementary to other reading materials for understanding how STAR detectors work. Most of the event displays are interactive (allow zooming-in and looking from various angles):
- - [STAR interactive detectors](https://nsww.org/projects/bnl/star/sub-systems.php)
- - [STAR live event display](https://online.star.bnl.gov/aggregator/livedisplay/)
- - [Dmitry's event display](https://www.star.bnl.gov/~dmitry/edisplay/)
+- **NIM Papers:**
+  - [NIM papers for all STAR detectors](https://www.star.bnl.gov/public/tpc/NimPapers/index.htm).
+  - [STAR PID NIM Paper](https://arxiv.org/abs/nucl-ex/0505026v2)
 
 Learn About STAR Data Analysis
 ---------------------------------
