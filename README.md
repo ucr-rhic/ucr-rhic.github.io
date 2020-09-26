@@ -57,8 +57,11 @@ Meeting Summary
 
 
 
-
-
+STAR Main Web Sites
+-------------------
+- [STAR Home Page](https://www.star.bnl.gov/)
+- [STAR Run Page](https://online.star.bnl.gov/)
+- [STAR Computing Drupal](https://drupal.star.bnl.gov/STAR/comp/)	
 
 STAR How-Tos
 -------------------
@@ -112,14 +115,21 @@ Resources
 
 - [Beam Use Request (BUR) for Runs 21, 23 and data taking in 2023 - 25](https://drupal.star.bnl.gov/STAR/files/BUR2020_final.pdf)
 - [STAR mailing lists](https://www.star.bnl.gov/central/lists/)
+- [STAR CVS](https://www.star.bnl.gov/cgi-bin/protected/viewvc.cgi/cvsroot/)
 - [STAR Maker Class References](https://www.star.bnl.gov/webdata/dox/html/index.html)
-- [Shift Sign-Up Page](https://online.star.bnl.gov/)
+- [Shift Sign-Up Page](https://online.star.bnl.gov/ShiftSignup/)
+	+ [Login Info](https://drupal.star.bnl.gov/STAR/comp/sofi/web-access)
 - [Disk Usage Status](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
+- [Check HPSS request status](https://www.star.bnl.gov/devcgi/display_accnt.cgi)
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
 - [STAR Theses Repository](https://drupal.star.bnl.gov/STAR/theses)
 - [STAR Notes Drupal Page](https://drupal.star.bnl.gov/STAR/starnotes)
 - [STAR Github Repository](https://github.com/star-bnl)
 
+Student Custom Pages
+--------------------
+- [David Kapukchyan General Website](https://https://www.star.bnl.gov/protected/spin/dkapstar/)
+	+ [FPS FPOST Good Run List](https://www.star.bnl.gov/protected/spin/dkapstar/Run17_RunList/)
 
 
 
