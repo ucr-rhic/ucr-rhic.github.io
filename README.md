@@ -129,7 +129,7 @@ Resources
 
 Student Custom Pages
 --------------------
-- [David Kapukchyan General Website](https://https://www.star.bnl.gov/protected/spin/dkapstar/)
+- [David Kapukchyan General Website](https://www.star.bnl.gov/protected/spin/dkapstar/)
 	+ [FPS FPOST Good Run List](https://www.star.bnl.gov/protected/spin/dkapstar/Run17_RunList/)
 
 
