@@ -84,6 +84,8 @@ Learn About STAR Detectors
   - [EPD](https://youtu.be/OfJTq5cFe4U)
   - [BEMC](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting-september-2020/juniors-day/star-barrel-calorimeter-and-shower-ma)
 
+- **Past Thesis:** Any STAR thesis has description of relevant detectors. Drupal page for all STAR theses is [here](https://drupal.star.bnl.gov/STAR/theses). 
+
 - **NIM Papers:**
   - [NIM papers for all STAR detectors](https://www.star.bnl.gov/public/tpc/NimPapers/index.htm).
   - [STAR PID NIM Paper](https://arxiv.org/abs/nucl-ex/0505026v2)
@@ -91,9 +93,10 @@ Learn About STAR Detectors
 Learn About STAR Data Analysis
 ---------------------------------
 
-- **Collaboration Meeting Tutorials:** Every STAR collaboration meeting usually has tutorials/presentations on `STAR Data Analysis` during the juniors Day. Here are some collections (ordered from intro to advanced):
-
+**Collaboration Meeting Tutorials:** Every STAR collaboration meeting usually has tutorials/presentations on `STAR Data Analysis` during the juniors Day. Here are some collections :
 Note: After you click on the link, you might need to log-in to drupal first in order to see the presentations.
+
+(Ordered from Intro to Advanced)
 
   - [Starting Data Analysis on STAR](http://nuclear.ucdavis.edu/~brovko/GettingStarted.pdf)
   - [Basics of a STAR analysis (with source code)](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting/afternoon-session/star-software-101)
