@@ -38,7 +38,7 @@ Dial one of the following numbers:
 ```
 Enter the meeting ID and passcode (no passcode required) followed by #
 
-- Goodle Drive: [Link](https://drive.google.com/drive/folders/0B6drqx0255gLd3ZZVzFNb0JMTk0)
+- Google Drive: [Link](https://drive.google.com/drive/folders/0B6drqx0255gLd3ZZVzFNb0JMTk0)
 
 Meeting Summary
 -----------------
@@ -79,7 +79,7 @@ Learn About STAR Detectors
   - [STAR live event display](https://online.star.bnl.gov/aggregator/livedisplay/)
   - [Dmitry's event display](https://www.star.bnl.gov/~dmitry/edisplay/)
 
-- **Detector Expert's Presentation (with video) from Juniors Meeting:**
+- **Detector Expert's Presentation (with video) from Juniors Meetings:**
   - [TPC](https://drupal.star.bnl.gov/STAR/event/2020/06/11/star-juniors-detector-meeting-tpc)
   - [EPD](https://youtu.be/OfJTq5cFe4U)
   - [BEMC](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting-september-2020/juniors-day/star-barrel-calorimeter-and-shower-ma)
