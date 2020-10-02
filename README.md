@@ -70,7 +70,9 @@ STAR How-Tos
 - [How to get a computer account in STAR](https://drupal.star.bnl.gov/STAR/comp/sofi/facility-access/general-access)
 - [How to get file list](how-tos/get_file_list.md)
 - [How use NX/NoMachine to connect to RCF](how-tos/rcf_remote_login.md)
-
+- [How to generate ssh keys](how-tos/generate_keys.md)
+- [How to use ssh agent](how-tos/ssh_agent.md)
+- [How to transfer files into and out of RCF](how-tos/transfer_files_rcf.md)
 
 Learn About STAR Detectors
 ----------------------------
