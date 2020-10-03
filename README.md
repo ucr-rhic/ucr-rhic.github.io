@@ -43,6 +43,7 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
+- [Oct 2, 2020](meetings/Oct2_20.md)
 - [Sep 25, 2020](meetings/Sep25_20.md)
 - [Sep 18, 2020](meetings/Sep18_20.md)
 - [Sep 11, 2020](meetings/Sep11_20.md)
@@ -119,6 +120,7 @@ Resources
 - [Beam Use Request (BUR) for Runs 21, 23 and data taking in 2023 - 25](https://drupal.star.bnl.gov/STAR/files/BUR2020_final.pdf)
 - [STAR mailing lists](https://www.star.bnl.gov/central/lists/)
 - [STAR CVS](https://www.star.bnl.gov/cgi-bin/protected/viewvc.cgi/cvsroot/)
+- [STAR Github Repository](https://github.com/star-bnl)
 - [STAR Maker Class References](https://www.star.bnl.gov/webdata/dox/html/index.html)
 - [Shift Sign-Up Page](https://online.star.bnl.gov/ShiftSignup/)
 	+ [Login Info](https://drupal.star.bnl.gov/STAR/comp/sofi/web-access)
@@ -127,7 +129,7 @@ Resources
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
 - [STAR Theses Repository](https://drupal.star.bnl.gov/STAR/theses)
 - [STAR Notes Drupal Page](https://drupal.star.bnl.gov/STAR/starnotes)
-- [STAR Github Repository](https://github.com/star-bnl)
+
 
 Student Custom Pages
 --------------------
