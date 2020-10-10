@@ -1,13 +1,13 @@
 Getting Files into and out of BNL RCF servers
 ================================================
-Ref: (https://www.racf.bnl.gov/docs/services/ftp)
+Ref: [RCF tutorial](https://www.racf.bnl.gov/docs/services/ftp)
 
 This tutorial will walk you through how to copy files that you have stored on RCF onto your local desktop or laptop.  If you'll notice there is no *move* command since a local machine should not be able to modify files on a remote machine and vice versa.
 
 There are two relevant commands *sftp* and *scp*  I will go through both of these.
 
 
-Linux and Windows 10 machines that have OpenSSH installed
+Linux, Mac OS X, and Windows Subsystem for Linux
 -----------------------------------------------------------
 
 1. Make sure the correct private key is loaded using methods described [here](ssh_agent.md)

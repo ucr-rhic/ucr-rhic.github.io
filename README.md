@@ -70,10 +70,13 @@ STAR How-Tos
 - [How to modify UCR Github page content](how-tos/adding_entry_for_ucr_page.md)
 - [How to get a computer account in STAR](https://drupal.star.bnl.gov/STAR/comp/sofi/facility-access/general-access)
 - [How to get file list](how-tos/get_file_list.md)
-- [How use NX/NoMachine to connect to RCF](how-tos/rcf_remote_login.md)
-- [How to generate ssh keys](how-tos/generate_keys.md)
-- [How to use ssh agent](how-tos/ssh_agent.md)
-- [How to transfer files into and out of RCF](how-tos/transfer_files_rcf.md)
+- [How to login to RCF machines](how-tos/rcf_generic_login.md)
+	+ [How use NX/NoMachine to connect to RCF](how-tos/rcf_remote_login.md)
+	+ [How to generate ssh keys](how-tos/generate_keys.md)
+	+ [How to use ssh agent](how-tos/ssh_agent.md)
+	+ [How to use X11 Forwarding](how-tos/setup_xwindow.md)
+	+ [How to use ssh config file](how-tos/ssh_config.md)
+	+ [How to transfer files into and out of RCF](how-tos/transfer_files_rcf.md)
 
 Learn About STAR Detectors
 ----------------------------

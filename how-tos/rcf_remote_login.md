@@ -29,9 +29,9 @@ Download the latest NoMachine Client Software from the www.nomachine.com page
 ```
 Downloads -> Enterprise Products Evaluation -> NoMachine Enterprise Client
 ```
-`DO NOT` download and install the whole package (just do client), otherwise it will silently start `nx` server on your comouter.
+`DO NOT` download and install the whole package (just do client), otherwise it will silently start `nx` server on your computer.
 
-1. Make sure the ssh-agent is running ( with the key added) and set up the SSH tunnel as mentioned in the instructions above.
+1. Make sure the ssh-agent is running described ( with the key added as described [here](ssh_agent.md)) and set up the SSH tunnel as mentioned in the instructions above.
 
 2. Start the NoMachine Client Application.
 

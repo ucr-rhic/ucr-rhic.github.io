@@ -6,8 +6,6 @@ In order to keep from having to tell ssh which key to use during log in you can 
 
 Once a key is loaded into the ssh-agent you will no longer be prompted for a password to use that key.  The only time you have to re-load the key is when you restart your computer or log off.
 
-__**ADD SSH-AGENT FORWARD SECTION**__
-
 
 **Important: On most machines if the ssh-agent is running and you ssh with some private key then it will automatically add that key.  These instructions can help to debug some of those issues**
 
