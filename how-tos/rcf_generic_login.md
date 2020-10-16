@@ -47,7 +47,9 @@ A pseudo-terminal is basically a terminal that will run in the background as the
 SSH allows you to forward the loaded private keys from your running [ssh-agent](ssh_agent.md) so that if your key is needed beyond the gateway you can do this.  The SSH option for forwarding the keys from your running ssh-agent is '-A', e.g. `ssh -A username@rssh.rhic.bnl.gov`
 
 ### X11 Forwarding
-X11 is graphical window system you can use to display files on RCF.  Note that because of the dual tunnel, X11 runs slow and should be used for looking at things quickly.  The preferred graphical method for long term use is [no machine](rcf_remote_login.md).  Instructions for how to setup and use X11 can be found [here](setup_xwindow.md).  The other option is to just download the files from RCF to your local machine for which instructions can be found [here](transfer_files_rcf.md).  The X11 forward option is '-X' for untrusted servers and '-Y' for trusted servers, e.g. `ssh -X username@rssh.rhic.bnl.gov`
+X11 is graphical window system you can use to display files on RCF.  Note that because of the dual tunnel, X11 runs slow and should be used for looking at things quickly.  The preferred graphical method for long term use is [no machine](rcf_remote_login.md).  Instructions for how to setup and use X11 can be found [here](setup_xwindow.md).  The other option is to just download the files from RCF to your local machine for which instructions can be found [here](transfer_files_rcf.md).  The X11 forward option is '-X' for untrusted servers and '-Y' for trusted servers, e.g. `ssh -X username@rssh.rhic.bnl.gov`.
+
+Any program that requires a graphical display will automatically start an "X" window for it's graphical display.  To manually open image files like *png*, *jpg*, etc. use the command `display`, e.g. `display myimage.png`.  Need to install a separate utility to open *pdf* files but that utility will utilize the X11 connection.
 
 ### Combining Options
 SSH options can be combined.  You only need one *-* followed by option character.  You can also use multiple dashes separated by a space.  For instance pseudo-terminal allocation with ssh-agent forward and X11 forward can be done simultaneously with the following two ways.
@@ -81,3 +83,6 @@ __**IMPORTANT:Either make sure ssh-agent has key loaded or use option '-i' to gi
 - Download: `scp username@rftpexp.rhic.bnl.gov:/rcf/path/to/file /local/path/to/copy/to/`
 - Upload: `scp /local/file/to/copy username@rftpexp.rhic.bnl.gov:/rcf/path/to/copy/to/`
 - __BONUS__: `sftp username@rssh.rhic.bnl.gov`
+
+### Display image files with existing X11
+1. `display myimage.png`

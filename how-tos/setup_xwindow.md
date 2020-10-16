@@ -3,7 +3,7 @@ Setup X window system for graphical display of remote files
 
 The X window system (X11) is a way for displaying graphical windows over an ssh connection.
 
-Disclaimer: Most of the X11 programs I list here are 3rd party that I have found to be reliable over the years.  **__You__ are ultimately responsible for any software you download and install.**
+Disclaimer: Most of the X11 programs I list here are 3rd party that I have found to be reliable over the years.  ***You*** **are ultimately responsible for any software you download and install.**
 
 Installation
 -------------
@@ -39,7 +39,7 @@ Using X11 on Ubuntu is fairly simple.
 1. Set the __DISPLAY__ environment variable to *localhost:0*[^1] using the command `export DISPLAY=localhost:0`
 2. Enable X11 forwarding with your SSH command using option '-X' `ssh -X user@rssh.rhic.bnl.gov`
 	- You can use option '-Y' instead which tells ssh it is a trusted client but this may lead to security issues [see here](https://askubuntu.com/questions/35512/what-is-the-difference-between-ssh-y-trusted-x11-forwarding-and-ssh-x-u) and [here](https://stackoverflow.com/questions/13425820/difference-between-ssh-x-and-ssh-y), only use it if '-X'	is not working.
-3. Finished: Any graphical interface will now be opened on the X-window display
+3. Finished: Any graphical interface will now be opened on the X-window display, you can also [display image files](#X11DisplayImage)
 	- It is a good idea to check that (not modify) __DISPLAY__ environment variable is set to *localhost*[^1] on remote machine and `xeyes` runs.  If it is not set or `xeyes` doesn't run, then go back to beginning and try again.
 
 ### Mac OS X
@@ -69,7 +69,7 @@ This is my recommended way to use X11 on Windows 10.  Using X11 on Powershell wi
 	- If unset or incorrect set it using command `$Env:DISPLAY = "localhost:0"`
 2. Enable X11 forwarding with your SSH command using option '-Y' `ssh -Y user@rssh.rhic.bnl.gov`
 	- __**Note(October 9, 2020):**__ The option '-X' does not work possibly due to incompatibilities between certain Linux libraries running on Windows.  I may not sure if they this may cause security issues [see](#UbuntuSetupX11)
-3. Finished: Any graphical interface will now be opened on the X-window display
+3. Finished: Any graphical interface will now be opened on the X-window display, you can also [display image files](#X11DisplayImage)
 	- It is a good idea to check that (not modify) __DISPLAY__ environment variable is set to *localhost*[^1] on remote machine and `xeyes` runs.  If it is not set or `xeyes` doesn't run, then go back to beginning and try again.
 
 ##### Windows Subsystem for Linux (WSL) Version 1 Ubuntu
@@ -88,11 +88,16 @@ Disclaimer: PuTTY is 3rd party telnet/ssh tool for Windows, however due to Windo
 3. Click on icon labeled `Enable X11 forwarding`[^1]
 	- *Optional* Save the configuration file
 4. Click `Open` to start the connection.
-5. Finished: Any graphical interface will now be opened on the X-window display
+5. Finished: Any graphical interface will now be opened on the X-window display, you can also [display image files](#X11DisplayImage)
 	- It is a good idea to check that (not modify) __DISPLAY__ environment variable is set to *localhost*[^1] on remote machine and `xeyes` runs.  If it is not set or `xeyes` doesn't run, then go back to beginning and try again.
 
 [^1]:The name __localhost__ can be replaced with it's explicit form __127.0.0.1__.  The __:0__ simply tells it which display number to use of which *0* is the default.  If you have manually set it to something else replace *0* with chosen display number.
 
+<a name="X11DisplayImage"></a>
+How to Use the X11 Forward to Display Graphical Windows
+--------------------------
+
+This will happen automatically for applications that require a graphical display.  To display image files simply use the command `display` on any image file (*png*,*jpg*,etc), e.g. `display image.png` or any other image file.  To display *pdf* files need to install a separate *pdf* reader.  The *pdf* reader will then utilize the X11 connection to display *pdf* files.
 
 Potential Issues
 -------------------
