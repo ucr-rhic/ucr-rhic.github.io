@@ -60,7 +60,15 @@ Meeting Summary
 - [July 24, 2020](meetings/July24_20.md)
 
 
+Current Spin/Cold QCD Analyses
+-------------------------------
 
+- Inclusive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Latif)
+- Diffractive Pion A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Latif)
+- Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Xilin)
+- Pion and Dijet A<sub>LL</sub> at Intermediate Rapidities With EEMC (William)
+- A<sub>N</sub> for the Drell-Yan Process at Forward Rapidities (David)
+- Pion A<sub>N</sub> at Intermediate Rapidities With EEMC (Ananya)
 
 STAR Main Web Sites
 -------------------
