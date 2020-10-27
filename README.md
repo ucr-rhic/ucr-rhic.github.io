@@ -39,7 +39,6 @@ Dial one of the following numbers:
 Enter the meeting ID and passcode (no passcode required) followed by #
 
 - Google Drive: [Link](https://drive.google.com/drive/folders/0B6drqx0255gLd3ZZVzFNb0JMTk0)
-  + STAR FCS Construction Photos [Link](https://drive.google.com/drive/folders/1CnCLaKVaeA8EdUk2_0pw4th_JNcDNqTQ?usp=sharing)
 
 Meeting Summary
 -----------------
@@ -63,12 +62,19 @@ Meeting Summary
 Current Spin/Cold QCD Analyses
 -------------------------------
 
-- Inclusive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Latif)
-- Diffractive Pion A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Latif)
-- Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Xilin)
-- Pion and Dijet A<sub>LL</sub> at Intermediate Rapidities With EEMC (William)
-- A<sub>N</sub> for the Drell-Yan Process at Forward Rapidities (David)
-- Pion A<sub>N</sub> at Intermediate Rapidities With EEMC (Ananya)
+- [Inclusive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Latif)](analyses/emJetAN.md)
+- [Diffractive Pion A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Latif)](analyses/diffPionAN.md)
+- [Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC (Xilin)](analyses/diffJetAN.md)
+- [Pion and Dijet A<sub>LL</sub> at Intermediate Rapidities With EEMC (William)](analyses/eemcALL.md)
+- [A<sub>N</sub> for the Drell-Yan Process at Forward Rapidities (David)](analyses/DrellYanAN.md)
+- [Pion A<sub>N</sub> at Intermediate Rapidities With EEMC (Ananya)](analyses/eemcAN.md)
+
+
+Forward Upgrade Activities
+-----------------------------
+
+- STAR FCS Construction Photos [Link](https://drive.google.com/drive/folders/1CnCLaKVaeA8EdUk2_0pw4th_JNcDNqTQ?usp=sharing)
+
 
 STAR Main Web Sites
 -------------------
