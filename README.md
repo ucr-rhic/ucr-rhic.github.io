@@ -39,6 +39,7 @@ Dial one of the following numbers:
 Enter the meeting ID and passcode (no passcode required) followed by #
 
 - Google Drive: [Link](https://drive.google.com/drive/folders/0B6drqx0255gLd3ZZVzFNb0JMTk0)
+  + STAR FCS Construction Photos [Link](https://drive.google.com/drive/folders/1CnCLaKVaeA8EdUk2_0pw4th_JNcDNqTQ?usp=sharing)
 
 Meeting Summary
 -----------------
