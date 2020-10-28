@@ -138,6 +138,7 @@ Note: After you click on the link, you might need to log-in to drupal first in o
 Resources
 ---------
 
+- [RHIC Cold QCD Plan for 2017 - 2023](https://arxiv.org/abs/1602.03922)
 - [Beam Use Request (BUR) for Runs 21, 23 and data taking in 2023 - 25](https://drupal.star.bnl.gov/STAR/files/BUR2020_final.pdf)
 - [STAR mailing lists](https://www.star.bnl.gov/central/lists/)
 - [STAR CVS](https://www.star.bnl.gov/cgi-bin/protected/viewvc.cgi/cvsroot/)
