@@ -134,6 +134,8 @@ Note: After you click on the link, you might need to log-in to drupal first in o
   - [Introduction to PicoDst](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting-19-23-august-2019-cracow-poland/juniors-day/introduction-picodst)	
   - [The STAR Scheduler (SUMS)](https://drupal.star.bnl.gov/STAR/system/files/The_STAR_Scheduler_V8.pdf)
 
+- Other Resources:
+    - [Analysis Resources By Yang](https://drive.google.com/drive/folders/1QOxYYtEDO6uO5a2PaWHPpcWfP4vYaeFN)
 
 Resources
 ---------

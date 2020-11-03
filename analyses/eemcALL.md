@@ -8,6 +8,11 @@ Resources
 - [2006 PRD Paper Web Page](https://drupal.star.bnl.gov/STAR/blog/drach09/2013/feb/28/2006-eemc-neutral-pions-paper-home-page)
 - [2006 Paper Link](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.89.012001)
 - [All Past EEMC Analyses Page](https://drupal.star.bnl.gov/STAR/book/export/html/10124)
+- [Similar Analysis Using Run 12](https://drupal.star.bnl.gov/STAR/system/files/run12EndcapDijetPreliminary.pdf)
 
+**Dataset**
+- RHIC Run 15
+
+**Analysis Tools**
 
 - UCR Spin Analysis Tools Github repository: [BrightStar](https://github.com/latifkabir/BrightSTAR)
