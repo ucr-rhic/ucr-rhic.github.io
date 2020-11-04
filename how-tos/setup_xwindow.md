@@ -28,7 +28,7 @@ In order to use X11 on Windows you need to download and install an X11 program. 
 <a name="X11Setup"></a>
 Setup
 -----------------------------
-This describes only how to set up X11 windows for ssh connections.  X11 windows can be used for other things but here I limit it to ssh connections to RCF.
+This describes only how to set up X11 windows for ssh connections.  X11 windows can be used for other things but here I limit it to ssh connections to RCF.  The examples shown use the ssh gateway *rssh.rhic.bnl.gov* but check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways) for most recent ssh gateway information.
 
 <a name="UbuntuSetupX11"></a>
 ### Ubuntu (Not Tested)

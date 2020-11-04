@@ -4,7 +4,7 @@ Ref: [RCF tutorial](https://www.racf.bnl.gov/docs/services/ftp)
 
 This tutorial will walk you through how to copy files that you have stored on RCF onto your local desktop or laptop.  If you'll notice there is no *move* command since a local machine should not be able to modify files on a remote machine and vice versa.
 
-There are two relevant commands *sftp* and *scp*  I will go through both of these.
+There are two relevant commands *sftp* and *scp*  I will go through both of these.  These two commands __**MUST**__ be executed on your laptop terminal; Not a terminal that is to logged into RCF or one of its gateways.
 
 
 Linux, Mac OS X, and Windows Subsystem for Linux
@@ -58,7 +58,7 @@ Disclaimer: PuTTY is 3rd party telnet/ssh tool for Windows, however due to Windo
 Using PuTTY tools to transfer files works the same way except the name of the executable is different.
 1. Load private key into *pageant* as described [here](ssh_agent.md)
 
-2. Open a terminal window (Powershell recommended) and navigate to directory with PuTTY tools.
+2. Open a terminal window on your laptop (Powershell recommended) and navigate to directory with PuTTY tools.
 
 3. Here you can call the relevant executables from the command line
 	- __sftp__: Use command `psftp.exe` and use just like *sftp* as described [here](#SftpLinux)

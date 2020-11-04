@@ -2,7 +2,7 @@ Generate A New Key Pair
 ===========================
 Ref: [RCF tutorial](https://www.racf.bnl.gov/docs/authentication/ssh/keygen)
 
-SSH key authentication is needed to log into the RHIC computing facility (RCF) gateway *rssh.rhic.bnl.gov*
+SSH key authentication is needed to log into the RHIC computing facility (RCF) gateway *rssh.rhic.bnl.gov*, or check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways) for most recent available ssh gateways.
 
 SSH keys are a convenient way to authenticate users logging into remote machines.  The idea is that there is a private and public key.  The public key is kept on the server/remote machine you want to log into.  The private key you keep and typically requires a pass-phrase to use.  Although you can generate a private key without a password this will defeat the purpose of using key pairs to authenticate.
 

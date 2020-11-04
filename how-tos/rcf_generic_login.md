@@ -8,7 +8,7 @@ Log in is done using a program called ssh which according to wikipedia;
 
 On many systems this is pre-installed.  Windows before Windows 10 required a third party software called PuTTY.  If you are using a Windows computer without Windows 10 you can find instructions for using PuTTY [here](placeholder).
 
-In order to log in you must pass through two layers to get to the servers where you will be working.  The first layer is simply a gateway node.  __**No actual work should be done on the gateway nodes**__.  Gateway nodes for STAR work are the main RCF one *rssh.rhic.bnl.gov* and the NoMachine nodes *nx.rcf.bnl.gov*.  There is also a special STAR gateway node *stargw.starp.bnl.gov* that can be used to log into the online machines at STAR which are to be used only when you are working with raw data from the detectors.  This tutorial will not discuss access to this gateway since it is only for very specialized use.
+In order to log in you must pass through two layers to get to the servers where you will be working.  The first layer is simply a gateway node.  __**No actual work should be done on the gateway nodes**__.  Gateway nodes for STAR work are the main RCF one *rssh.rhic.bnl.gov* and the NoMachine nodes *nx.rcf.bnl.gov*.  To find the most recent available ssh gateways check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways). There is also a special STAR gateway node *stargw.starp.bnl.gov* that can be used to log into the online machines at STAR which are to be used only when you are working with raw data from the detectors.  This tutorial will not discuss access to this gateway since it is only for very specialized use.
 
 After you log in to the gateway you need to log into one of many other nodes that you can use for analysis or for setting up No Machine virtual desktop.
 
@@ -80,6 +80,8 @@ Summary
 
 ### Transfer Files using scp to and from RCF ([tutorial](transfer_files_rcf.md))
 __**IMPORTANT:Either make sure ssh-agent has key loaded or use option '-i' to give private key explicitly**__
+
+These commands must be executed on your laptop terminal not the RCF nodes or gateways
 - Download: `scp username@rftpexp.rhic.bnl.gov:/rcf/path/to/file /local/path/to/copy/to/`
 - Upload: `scp /local/file/to/copy username@rftpexp.rhic.bnl.gov:/rcf/path/to/copy/to/`
 - __BONUS__: `sftp username@rssh.rhic.bnl.gov`
