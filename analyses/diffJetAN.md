@@ -10,7 +10,11 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 
 **Dataset:**
 - Run 17 (Primarily) and Run 15 (Initially)
-- Using Detectors FMS and EEMC
+- Using Detectors FMS and EEMC with RP
+- Dataset and Trigger for FMS + RP Correlation: Use OR of FMS small board sum, FMS large board sum and FMS-JP triggers in FMS-stream data set.
+- Dataset and Trigger for EEMC + RP Correlation: Use EHT0 Trigger in Physics stream.
+
+
 
 **Analysis Tools:**
 
