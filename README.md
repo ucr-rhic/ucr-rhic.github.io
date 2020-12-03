@@ -43,6 +43,7 @@ Enter the meeting ID and passcode (no passcode required) followed by #
 Meeting Summary
 -----------------
 
+- [Nov 20, 2020](meetings/Nov20_20.md)
 - [Nov 13, 2020](meetings/Nov13_20.md)
 - [Nov 6, 2020](meetings/Nov6_20.md)
 - [Oct 30, 2020](meetings/Oct30_20.md)
