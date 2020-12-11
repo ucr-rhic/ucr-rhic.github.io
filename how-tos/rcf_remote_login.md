@@ -13,14 +13,12 @@ As of December 2017, all the RHIC production NX servers - `nx01.rcf.bnl.gov, nx0
 **Part-1: Establish the tunneling**
 
 ```
-ssh -L 7025:nx01.rcf.bnl.gov:22 -l [username] rssh01.rhic.bnl.gov
+ssh -L 7025:nx01.rcf.bnl.gov:22 -l [username] ssh.sdcc.bnl.gov
 ```
 - replace nx01 with nx02 if logging into nx02 and so on.
 - 7025 should be replaced with a random high numbered open port (between 4096 and 65535) on your desktop.
 - There are four NX servers: nx01.rcf.bnl.gov, nx02.rcf.bnl.gov, nx06.rcf.bnl.gov and nx07.rcf.bnl.gov. Either one can be used.
 - `username` is your RACF `username`
-- `rssh01.rhic.bnl.gov` can be replaced with any of the other three RCF SSH gateways.
-
 
 
 **Part-2: Use `NoMachine` client for Desktop access**
