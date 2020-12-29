@@ -18,4 +18,4 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 
 **Previous presentations:**
 
-- [Diffractive jet basic study](https://drive.google.com/file/d/1FAP7NyflAx0lDKqFWk_NFi8_L_M2mF3h/view?usp=sharing)
+- [Diffractive jet basic study](https://drive.google.com/file/d/1FAP7NyflAx0lDKqFWk_NFi8_L_M2mF3h/view?usp=sharing) (12/07/2020, Note: EEMC is not correct)
