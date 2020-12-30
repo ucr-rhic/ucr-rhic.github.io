@@ -10,11 +10,17 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 
 **Dataset:**
 - Run 17 (Primarily) and Run 15 (Initially)
-- Using Detectors FMS and EEMC
+- Using Detectors FMS and EEMC with RP.
 
 **Analysis Tools:**
-
 - UCR Spin Analysis Tools Github repository: [BrightStar](https://github.com/latifkabir/BrightSTAR)
+
+**Resources:**
+- STAR Jet Reconstruction code: See the blog post [here](https://drupal.star.bnl.gov/STAR/blog/gdwebb/running-jet-code) 
+- For Jet analysis, see related theses, for example:
+  - [Grant Webb's Thesis](https://drupal.star.bnl.gov/STAR/files/main_2.pdf) 
+  - [Zilong's thesis](https://drupal.star.bnl.gov/STAR/system/files/Zilong_Chang_TAMU_Thesis.pdf)
+  - [Kevis's thesis](https://drupal.star.bnl.gov/STAR/files/KevinAdkinsThesis_Final.pdf)
 
 **Previous presentations:**
 
