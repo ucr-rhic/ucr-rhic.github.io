@@ -31,7 +31,7 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 
 - Diffractive Events
 - Jet Finding Algorithm
-- Pileup or accidental background
+- Pileup or Accidental Background
 - Underlying Events
 - Unfolding
 
