@@ -21,6 +21,7 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
   - [Grant Webb's thesis](https://drupal.star.bnl.gov/STAR/files/main_2.pdf) 
   - [Zilong's thesis](https://drupal.star.bnl.gov/STAR/system/files/Zilong_Chang_TAMU_Thesis.pdf)
   - [Kevin's thesis](https://drupal.star.bnl.gov/STAR/files/KevinAdkinsThesis_Final.pdf)
+- [Chong's FMS Calibration Notes](https://drupal.star.bnl.gov/STAR/starnotes/private/psn0735)
 
 **Previous presentations:**
 
