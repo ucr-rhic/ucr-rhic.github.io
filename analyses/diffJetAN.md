@@ -23,12 +23,20 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
   - [Kevin's thesis](https://drupal.star.bnl.gov/STAR/files/KevinAdkinsThesis_Final.pdf)
 - [Chong's FMS Calibration Notes](https://drupal.star.bnl.gov/STAR/starnotes/private/psn0735)
 
-**Previous presentations:**
-
-- [Diffractive jet basic study](https://drive.google.com/file/d/1FAP7NyflAx0lDKqFWk_NFi8_L_M2mF3h/view?usp=sharing) (12/07/2020, Note: EEMC is not correct)
-
 
 **Workflow**
 ![](Analysis_Workflow_EMjet_AN.jpg)
+
+**Critical Concepts**
+
+- Diffractive Events
+- Jet Finding Algorithm
+- Pileup or accidental background
+- Underlying Events
+- Unfolding
+
+**Previous presentations:**
+
+- [Diffractive jet basic study](https://drive.google.com/file/d/1FAP7NyflAx0lDKqFWk_NFi8_L_M2mF3h/view?usp=sharing) (12/07/2020, Note: EEMC is not correct)
 
 
