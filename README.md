@@ -24,7 +24,7 @@ Current Group Members
 Weekly Group Meeting
 -------------------------
 
-- Time: Friday 3 PM UCR Time / 6 PM BNL Time
+- Time: Friday 12 PM UCR Time / 3 PM BNL Time
 
 - Meeting URL: `https://bluejeans.com/331676832`
 Bluejeans Meeting ID: 331 676 832
