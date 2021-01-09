@@ -2,7 +2,7 @@ Generate A New Key Pair
 ===========================
 Ref: [RCF tutorial](https://www.racf.bnl.gov/docs/authentication/ssh/keygen)
 
-SSH key authentication is needed to log into the RHIC computing facility (RCF) gateway *rssh.rhic.bnl.gov*, or check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways) for most recent available ssh gateways.
+SSH key authentication is needed to log into the RHIC computing facility (RCF) gateway *ssh.sdcc.bnl.gov*, or check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways) for most recent available ssh gateways.
 
 SSH keys are a convenient way to authenticate users logging into remote machines.  The idea is that there is a private and public key.  The public key is kept on the server/remote machine you want to log into.  The private key you keep and typically requires a pass-phrase to use.  Although you can generate a private key without a password this will defeat the purpose of using key pairs to authenticate.
 
@@ -53,7 +53,7 @@ Linux and Windows 10 machines that have OpenSSH installed
 10. To upload your key file, click the Send File button.
 
 11. You can now login to one of the gateway machines using SSH keys using command below. You will be prompted for the pass-phrase for your private key during the login process. The pass-phrase will not leave your local machine.
-	+ `ssh -i ~/.ssh/id_rsa/ username@rssh.rhic.bnl.gov`
+	+ `ssh -i ~/.ssh/id_rsa/ username@ssh.sdcc.bnl.gov`
 	
 12. In order to prevent having to type the password every time you can add the key to the *ssh-agent*  [see here](ssh_agent.md)
 

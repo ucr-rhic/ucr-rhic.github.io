@@ -20,7 +20,6 @@ ssh -L 7025:nx01.rcf.bnl.gov:22 -l [username] ssh.sdcc.bnl.gov
 - There are four NX servers: nx01.rcf.bnl.gov, nx02.rcf.bnl.gov, nx06.rcf.bnl.gov and nx07.rcf.bnl.gov. Either one can be used.
 - `username` is your RACF `username`
 
-
 **Part-2: Use `NoMachine` client for Desktop access**
 
 Download the latest NoMachine Client Software from the www.nomachine.com page

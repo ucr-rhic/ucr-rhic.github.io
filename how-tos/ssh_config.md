@@ -3,6 +3,8 @@ Using an ssh config file to bypass passing options to ssh
 
 An ssh config file is a special file that can be used to tell what options to pass to the ssh command.  This tutorial will show you how to write an ssh config file that automatically passes the correct options to log into RCF either using ssh or for nx connections.
 
+The main reason for doing this is to bypass having to type in all the ssh options when giving the command on the terminal and reduce it to a much shorter and easier to remember form.  The ssh config will set up a kind of profile that can be then be used as alias to the ssh command.  e.g. if I have profile with name "MyConnection" I need only execute `ssh MyConnection` to establish the connection rather than something like `ssh -AX user@ipaddress`.
+
 An ssh config file is used by any \*Nix system.  This means Ubuntu, Mac OS, Windows with OpenSSH installed, Windows subsystem for Linux (WSL), etc.
 
 
@@ -46,11 +48,11 @@ Here I list the other options that would be useful for RCF connections
 
 RCF Example
 -----------
-Below is an example showing how to write the config file for connecting to RCF ssh gateway *rssh.rhic.bnl.gov*.  To find the most recent available ssh gateways check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways)
+Below is an example showing how to write the config file for connecting to RCF ssh gateway *ssh.sdcc.bnl.gov*.  To find the most recent available ssh gateways check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways)
 > Host MyRcfConnection  
-> HostName rssh.rhic.bnl.gov  
+> HostName ssh.sdcc.bnl.gov  
 > User username  
-> IdentityFile \/path\/to\/key  
+> IdentityFile /path/to/key  
 > ForwardAgent yes  
 > ForwardX11 yes  
 > ForwardX11Trusted yes  
@@ -65,9 +67,9 @@ NoMachine Example
 ------------------
 Below is an example showing how to write the config file for connecting to RCF gateway and allowing port forwarding for nomachine (nx).
 > Host MyNxConnection  
-> HostName rssh.rhic.bnl.gov  
+> HostName ssh.sdcc.bnl.gov  
 > User username  
-> IdentityFile \/path\/to\/key  
+> IdentityFile /path/to/key  
 > ForwardAgent yes  
 > LocalForward 7025:nx01.rcf.bnl.gov:22  
 - *MyNxConnection* should be replaced with any name you want to give it

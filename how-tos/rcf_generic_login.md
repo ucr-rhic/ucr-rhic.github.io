@@ -6,7 +6,7 @@ Logging into RCF consists of several steps.  Before starting one must fill out a
 Log in is done using a program called ssh which according to wikipedia;
 > \[SSH\] is a cryptographic network protocol for operating network services securely over an unsecured network ... The IANA has assigned TCP port 22, UDP port 22 and SCTP port 22 for this protocol  
 
-On many systems this is pre-installed.  Windows before Windows 10 required a third party software called PuTTY.  If you are using a Windows computer without Windows 10 you can find instructions for using PuTTY [here](placeholder).
+On many systems this is pre-installed.  Before continuing here please check out this [tuturial](windows_setup.md) to setup ssh on Windows 10 with Powershell.  Windows before Windows 10 required a third party software called PuTTY.  If you are using a Windows computer without Windows 10 you can find PuTTY [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/).  There are tutorials interleaved in the various guides for using PuTTY so I will not go into details here because Powershell with OpenSSH is the recommended and easiest method since it allows for \*NIX style commands.
 
 In order to log in you must pass through two layers to get to the servers where you will be working.  The first layer is simply a gateway node.  __**No actual work should be done on the gateway nodes**__.  Gateway nodes for STAR work are the main RCF one *ssh.sdcc.bnl.gov* and the NoMachine nodes *nx.rcf.bnl.gov*.  To find the most recent available ssh gateways check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways). There is also a special STAR gateway node *stargw.starp.bnl.gov* that can be used to log into the online machines at STAR which are to be used only when you are working with raw data from the detectors.  This tutorial will not discuss access to this gateway since it is only for very specialized use.
 
@@ -18,7 +18,7 @@ These instructions will guide you through most of these steps with the relevant 
 2. Load the key into an ssh-agent or give private key file directly to ssh command.  All described [here](ssh_agent.md)
 	- Optionally you can create an ssh config file to make login in easier, [instructions](ssh_config.md)
 3. SSH into the desired gateway.
-	- For the *rssh* gateway the command is `ssh username@ssh.sdcc.bnl.gov`
+	- For the *ssh.sdcc* gateway the command is `ssh username@ssh.sdcc.bnl.gov`
 		+ Where *username* should be replaced by the user name of your SDCC account.
 		+ Upon success you will see a warning message that shows you have logged into a Federal computer system and see a terminal prompt that includes text like *username@rsshXX*, where 'XX' will be replaced by whatever gateway number you have logged into.
 	- For No Machine gateway stop and follow instructions [here](rcf_remote_login.md) instead.  Once you get to the virtual desktop open a terminal and continue with step 4.
@@ -66,7 +66,7 @@ Summary
 
 ### No Machine Connect
 1. Load Private key into ssh-agent
-2. Run `ssh -L <port>:nx.rcf.bnl.gov:22  username@nx.rcf.bnl.gov`
+2. Run `ssh -L <port>:nx.rcf.bnl.gov:22  username@ssh.sdcc.bnl.gov`
 	- *port* should be an open port with a high value random number between 4096 and 65535 and is the port to use for port forwarding.  It should match the saved port number in your No Machine connect file or for first time pick one and stay with it.
 3. Start No Machine
 4. If you have a previously saved connection click on that and done. If not follow these instructions to create a new connection

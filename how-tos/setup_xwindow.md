@@ -28,7 +28,7 @@ In order to use X11 on Windows you need to download and install an X11 program. 
 <a name="X11Setup"></a>
 Setup
 -----------------------------
-This describes only how to set up X11 windows for ssh connections.  X11 windows can be used for other things but here I limit it to ssh connections to RCF.  The examples shown use the ssh gateway *rssh.rhic.bnl.gov* but check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways) for most recent ssh gateway information.
+This describes only how to set up X11 windows for ssh connections.  X11 windows can be used for other things but here I limit it to ssh connections to RCF.  The examples shown use the ssh gateway *ssh.sdcc.bnl.gov* but check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways) for most recent ssh gateway information.
 
 <a name="UbuntuSetupX11"></a>
 ### Ubuntu (Not Tested)
@@ -37,14 +37,14 @@ This describes only how to set up X11 windows for ssh connections.  X11 windows 
 Using X11 on Ubuntu is fairly simple.
 
 1. Set the __DISPLAY__ environment variable to *localhost:0*[^1] using the command `export DISPLAY=localhost:0`
-2. Enable X11 forwarding with your SSH command using option '-X' `ssh -X user@rssh.rhic.bnl.gov`
+2. Enable X11 forwarding with your SSH command using option '-X' `ssh -X user@ssh.sdcc.bnl.gov`
 	- You can use option '-Y' instead which tells ssh it is a trusted client but this may lead to security issues [see here](https://askubuntu.com/questions/35512/what-is-the-difference-between-ssh-y-trusted-x11-forwarding-and-ssh-x-u) and [here](https://stackoverflow.com/questions/13425820/difference-between-ssh-x-and-ssh-y), only use it if '-X'	is not working.
 3. Finished: Any graphical interface will now be opened on the X-window display, you can also [display image files](#X11DisplayImage)
 	- It is a good idea to check that (not modify) __DISPLAY__ environment variable is set to *localhost*[^1] on remote machine and `xeyes` runs.  If it is not set or `xeyes` doesn't run, then go back to beginning and try again.
 
 ### Mac OS X
 
-Using X11 on Mac OS X is similar to  Ubuntu.  The only difference is __DISPLAY__ environment variable need not be set.  Simply ssh using option '-X' or '-Y' as needed [see](#UbuntuSetupX11) `ssh -X user@rssh.rhic.bnl.gov`.  It is a good idea to check that (not modify) __DISPLAY__ environment variable is set to *localhost*[^1] on remote machine and `xeyes` runs.  If it is not set or `xeyes` doesn't run, then go back to beginning and try again.
+Using X11 on Mac OS X is similar to  Ubuntu.  The only difference is __DISPLAY__ environment variable need not be set.  Simply ssh using option '-X' or '-Y' as needed [see](#UbuntuSetupX11) `ssh -X user@ssh.sdcc.bnl.gov`.  It is a good idea to check that (not modify) __DISPLAY__ environment variable is set to *localhost*[^1] on remote machine and `xeyes` runs.  If it is not set or `xeyes` doesn't run, then go back to beginning and try again.
 
 ### Windows
 
@@ -67,7 +67,7 @@ This is my recommended way to use X11 on Windows 10.  Using X11 on Powershell wi
 
 1. Ensure the __DISPLAY__ environment variable is set to *localhost:0*[^1] using the command `echo $env:DISPLAY`
 	- If unset or incorrect set it using command `$Env:DISPLAY = "localhost:0"`
-2. Enable X11 forwarding with your SSH command using option '-Y' `ssh -Y user@rssh.rhic.bnl.gov`
+2. Enable X11 forwarding with your SSH command using option '-Y' `ssh -Y user@ssh.sdcc.bnl.gov`
 	- __**Note(October 9, 2020):**__ The option '-X' does not work possibly due to incompatibilities between certain Linux libraries running on Windows.  I may not sure if they this may cause security issues [see](#UbuntuSetupX11)
 3. Finished: Any graphical interface will now be opened on the X-window display, you can also [display image files](#X11DisplayImage)
 	- It is a good idea to check that (not modify) __DISPLAY__ environment variable is set to *localhost*[^1] on remote machine and `xeyes` runs.  If it is not set or `xeyes` doesn't run, then go back to beginning and try again.

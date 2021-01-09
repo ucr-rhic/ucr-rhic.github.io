@@ -83,7 +83,7 @@ Forward Upgrade Activities
 -----------------------------
 
 - STAR FCS Construction Photos [Link](https://drive.google.com/drive/folders/1CnCLaKVaeA8EdUk2_0pw4th_JNcDNqTQ?usp=sharing)
-
+- Construction Photos on Akio Ogawa's [page](https://www.star.bnl.gov/protected/spin/akio/fcs/photo/index.html)
 
 STAR Main Web Sites
 -------------------
