@@ -21,5 +21,5 @@ Resources
 - Make basic QA plots:
      - Pion invariant mass
      - pion energy, p_T, zgg etc
-     - Number of pions per run normalized by trigger for each trigger type
+     - Number of pions per run normalized by trigger for each major trigger type
 
