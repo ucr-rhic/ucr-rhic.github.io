@@ -11,3 +11,15 @@ Resources
 
 
 - UCR Spin Analysis Tools Github repository: [BrightStar](https://github.com/latifkabir/BrightSTAR)
+
+
+**Excersices**
+
+- Document `get_filelist` command
+- Check that we have enough longitudinal dataset to do the analysis: total number of runs, number of events, number of fills, approximate total file sizes
+- Generate DST using scheduler
+- Make basic QA plots:
+     - Pion invariant mass
+     - pion energy, p_T, zgg etc
+     - Number of pions per run normalized by trigger for each trigger type
+
