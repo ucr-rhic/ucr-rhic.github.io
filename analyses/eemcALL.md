@@ -13,7 +13,7 @@ Resources
 
 **Dataset**
 - RHIC Run 15
-- Get filelist command: 
+- `get_filelist` command: 
 
 **Analysis Tools**
 
