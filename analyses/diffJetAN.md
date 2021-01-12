@@ -40,3 +40,18 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 - [Diffractive jet basic study](https://drive.google.com/file/d/1FAP7NyflAx0lDKqFWk_NFi8_L_M2mF3h/view?usp=sharing) (12/07/2020, Note: EEMC is not correct)
 
 
+**Exercises**
+
+- Generate DST for EM-jets in FMS and EEMC
+- Perform QA studies
+   - Check if there is any hot/bad/dead FMS channels: Make jet y vs x plot for each fill
+   - For the fills having hot areas, find the corresponding detector and channel ids and add the detector and channel ids to hot channels list
+   - Once hot channels list is updated, generate EM-jet for that fill again and check if the hot area is gone.
+   - Make a plot to show number of jets per run normalized by number of JP0 trigger: along x axis is the run number (or could be run index) and y axis plot number of em-jets nurmalized by number of JP0 trigger
+   
+   
+
+
+
+
+
