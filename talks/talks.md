@@ -1,6 +1,8 @@
 Recent Public Presentations/Talks
 ------------------------------
 
+- [Initial Stages 2021 Talk](https://indico.cern.ch/event/854124/contributions/4135488/)
+
 - [Prospects of exploring nucleon and nucleus structures in hadronic collisions with the STAR experiment in 2022 and beyond](https://indico.cern.ch/event/854124/contributions/4135488/) by  David Kapukchyan at [Initial Stages 2021](https://indico.cern.ch/event/854124/overview) 
 - [EIC YR results and analysis (detector)](https://indico.bnl.gov/event/9794/contributions/43706/attachments/31946/50613/Barish-IR2-EIC-PrepWorkshop_2020.pdf) By Ken Barish at the [Workshop Series on the 2nd Interaction Region at the EIC](https://indico.bnl.gov/event/9794/timetable/#20201215) 
 - [EM-Jet $A_N$ at Forward Rapidities at STAR](https://drive.google.com/drive/folders/1OeAANezNHWJtpdn7tT9q__YUvMXi9Pyr) By Latif Kabir at the [DNP 2020 Meeting](https://indico.frib.msu.edu/event/37/)
