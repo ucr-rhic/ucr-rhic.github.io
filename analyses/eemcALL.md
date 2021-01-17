@@ -13,7 +13,8 @@ Resources
 
 **Dataset**
 - RHIC Run 15
-- `get_filelist` command: 
+- `get_filelist` command: get_file_list.pl -keys 'path,filename' -cond 'storage!=hpss,filetype=daq_reco_muDst,filename~st_physics,production=P16id,trgsetupname=production_pp200long_2015' -limit 0 -distinct -delim '/'
+
 
 **Analysis Tools**
 
