@@ -19,7 +19,7 @@ Resources
 **Analysis Tools**
 
 - UCR Spin Analysis Tools Github repository: [BrightStar](https://github.com/latifkabir/BrightSTAR)
-
+- Calss references for EEMC pion Tree: [here](https://www.star.bnl.gov/webdata/dox/html/dir_f55c6bc819b98feb2a7a93228ad627a8.html)
 
 **Excercises**
 
