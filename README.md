@@ -26,22 +26,32 @@ Weekly Group Meeting
 
 - Time: Friday 12 PM UCR Time / 3 PM BNL Time
 
-- Meeting URL: `https://bluejeans.com/331676832`
-Bluejeans Meeting ID: 331 676 832
+- Meeting URL: `https://ucr.zoom.us/j/93165338201`
+Zoom Meeting ID: 93165338201
 
 - Want to dial in from a phone?
 Dial one of the following numbers:
+
 ```
-+1.408.740.7256 (US (San Jose))
-+1.408.317.9253 (US (Primary, San Jose))
-(see all numbers - https://www.bluejeans.com/premium-numbers)
+United States of America:
++1 646 876 9923 (New York)
++1 669 900 6833 (San Jose)
++1 346 248 7799 (Houston)
+(see all numbers - https://zoom.us/zoomconference)
 ```
-Enter the meeting ID and passcode (no passcode required) followed by #
+Enter the meeting ID and passcode (no passcode required) followed by # . Use `*6` to toggle mute/unmute.
+
+```
+One tap mobile
++16468769923,,93165338201# US (New York)
++13126266799,,93165338201# US (Chicago)
+```
 
 - Google Drive: [Link](https://drive.google.com/drive/folders/0B6drqx0255gLd3ZZVzFNb0JMTk0)
 
 Meeting Summary
 -----------------
+
 
 - [Jan 8, 2021](meetings/Jan8_21.md)
 - [Dec 18, 2020](meetings/Dec18_20.md)
