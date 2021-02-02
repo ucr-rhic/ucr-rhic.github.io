@@ -170,6 +170,7 @@ Resources
 	+ [Login Info](https://drupal.star.bnl.gov/STAR/comp/sofi/web-access)
 - [STAR RunLog Browser](https://online.star.bnl.gov/RunLog/)	
 - [Disk Usage Status](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
+- [STAR Run Log Browser](https://online.star.bnl.gov/RunLog/)
 - [Check HPSS request status](https://www.star.bnl.gov/devcgi/display_accnt.cgi)
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
 - [STAR Theses Repository](https://drupal.star.bnl.gov/STAR/theses)
