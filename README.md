@@ -168,6 +168,7 @@ Resources
 - [STAR Maker Class References](https://www.star.bnl.gov/webdata/dox/html/index.html)
 - [Shift Sign-Up Page](https://online.star.bnl.gov/ShiftSignup/)
 	+ [Login Info](https://drupal.star.bnl.gov/STAR/comp/sofi/web-access)
+- [STAR RunLog Browser](https://online.star.bnl.gov/RunLog/)	
 - [Disk Usage Status](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
 - [Check HPSS request status](https://www.star.bnl.gov/devcgi/display_accnt.cgi)
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
