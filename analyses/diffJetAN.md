@@ -26,6 +26,32 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 
 
 **Workflow**
+
+```
+   Students Meeting ----> UCR Meeting ----> FMS Meeting -------> PWG Meeting -----> Working on feedback
+   	   /\ 	    	      	    			     	     	        	 |   
+	    |									         |
+	    |____________________________________________________________________________|
+	   
+
+
+				C++ (basic syntax)
+				    |
+				   \|/
+			     Object Oriented C++ Programming
+			     	    |
+				   \|/
+			     Linux Commands / Unix    
+				    |
+				   \|/
+	     User Analysis<------- ROOT<-------------------------------------------------
+				    |							|
+				   \|/							|						
+			       STAR Analysis (StRoot)-----------------> Generate DST ---|   
+                                 
+```
+
+
 ![](Analysis_Workflow_EMjet_AN.jpg)
 
 **Critical Concepts**
@@ -44,12 +70,26 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 
 **Exercises**
 
+- Motivation
+
 - Generate DST for EM-jets in FMS and EEMC
+
 - Perform QA studies
    - Check if there is any hot/bad/dead FMS channels: Make jet y vs x plot for each fill
    - For the fills having hot areas, find the corresponding detector and channel ids and add the detector and channel ids to hot channels list
    - Once hot channels list is updated, generate EM-jet for that fill again and check if the hot area is gone.
    - Make a plot to show number of jets per run normalized by number of JP0 trigger: along x axis is the run number (or could be run index) and y axis plot number of em-jets nurmalized by number of JP0 trigger
+   - EEMC Tower QA Studies
+   - RP QA Studies
+
+- Event Selection:
+  - Complete list of cuts
+  - Pileup or accidental events
+  - Develop algorithm to remove pileup 
+
+
+
+   
    
    
 

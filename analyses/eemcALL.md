@@ -20,13 +20,56 @@ Resources
 - UCR Spin Analysis Tools Github repository: [BrightStar](https://github.com/latifkabir/BrightSTAR)
 - Calss references for EEMC pion Tree: [here](https://www.star.bnl.gov/webdata/dox/html/dir_f55c6bc819b98feb2a7a93228ad627a8.html)
 
+```
+   Students Meeting ----> UCR Meeting ----> FMS Meeting -------> PWG Meeting -----> Working on feedback
+     	    /\ 	    	      	      	    			     	     	    	 |   
+	    |				         					 |
+	    |____________________________________________________________________________|
+	   
+
+			       C++ (basic syntax)
+				    |
+				   \|/
+			     Object Oriented C++ Programming
+			     	    |
+				   \|/
+			     Linux Commands / Unix    
+				    |
+				   \|/
+	     User Analysis<------- ROOT<-------------------------------------------------
+				    |							|
+				   \|/							|						
+			       STAR Analysis (StRoot)-----------------> Generate DST ---|   
+```
+
+
 **Excercises**
 
 - Document `get_filelist` command
+
 - Check that we have enough longitudinal dataset to do the analysis: total number of runs, number of events, number of fills, approximate total file sizes
-- Generate DST using scheduler
-- Make basic QA plots: 
+
+- Generate DST using scheduler 
+  - Merge multiple files into one file
+
+- Make basic QA plots:
+   - Access DST (root file) using macro (understand)
+   - Access two root files simultaneously (part1 and part3) (root exercise) and read event and pion info
    - Pion invariant mass
    - pion energy, p_T, zgg etc
    - Number of pions per run normalized by trigger for each trigger type
-   
+  
+
+
+
+						
+
+
+
+
+
+
+
+
+
+
