@@ -21,10 +21,11 @@ Resources
 - Calss references for EEMC pion Tree: [here](https://www.star.bnl.gov/webdata/dox/html/dir_f55c6bc819b98feb2a7a93228ad627a8.html)
 
 ```
-   Students Meeting ----> UCR Meeting ----> FMS Meeting -------> PWG Meeting -----> Working on feedback
-     	    /\ 	    	      	      	    			     	     	    	 |   
-	    |				         					 |
-	    |____________________________________________________________________________|
+ Students Meeting ----> UCR Meeting ----> FMS Meeting -------> PWG Meeting -----> Working on
+   	   /\ 	    	      	      	    			     	     	    feedback
+     	   | 	    	      	      	    			     	     	    	|   
+	   |				         					|
+	   |____________________________________________________________________________|
 	   
 
 			       C++ (basic syntax)

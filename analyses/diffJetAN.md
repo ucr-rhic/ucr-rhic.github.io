@@ -28,14 +28,14 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 **Workflow**
 
 ```
-   Students Meeting ----> UCR Meeting ----> FMS Meeting -------> PWG Meeting -----> Working on feedback
-   	   /\ 	    	      	    			     	     	        	 |   
-	    |									         |
-	    |____________________________________________________________________________|
-	   
+ Students Meeting ----> UCR Meeting ----> FMS Meeting -------> PWG Meeting -----> Working on
+   	   /\ 	    	      	      	    			     	     	    feedback
+     	   | 	    	      	      	    			     	     	    	|   
+	   |				         					|
+	   |____________________________________________________________________________|
+	   	   
 
-
-				C++ (basic syntax)
+			     C++ (basic syntax)
 				    |
 				   \|/
 			     Object Oriented C++ Programming

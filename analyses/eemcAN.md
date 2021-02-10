@@ -13,10 +13,11 @@ Resources
 - UCR Spin Analysis Tools Github repository: [BrightStar](https://github.com/latifkabir/BrightSTAR)
 
 ```
-   Students Meeting ----> UCR ----> FMS Meeting -------> PWG Meeting -----> Working on feedback
-   	   /\ 	    	      	    			     	     	    	 |   
-	    |									 |
-	    |____________________________________________________________________|
+ Students Meeting ----> UCR Meeting ----> FMS Meeting -------> PWG Meeting -----> Working on
+   	   /\ 	    	      	      	    			     	     	    feedback
+     	   | 	    	      	      	    			     	     	    	|   
+	   |				         					|
+	   |____________________________________________________________________________|
 	   
 
 			C++ (basic syntax)
