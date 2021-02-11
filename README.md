@@ -54,6 +54,10 @@ Meeting Summary
 -----------------
 
 
+- [Feb 05, 2021](meetings/Feb5_21.md)
+- [Jan 29, 2021](meetings/Jan22_21.md)
+- [Jan 22, 2021](meetings/Jan22_21.md)
+- [Jan 15, 2021](meetings/Jan15_21.md)
 - [Jan 8, 2021](meetings/Jan8_21.md)
 - [Dec 18, 2020](meetings/Dec18_20.md)
 - [Dec 11, 2020](meetings/Dec11_20.md)
