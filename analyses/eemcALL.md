@@ -60,6 +60,20 @@ Resources
    - pion energy, p_T, zgg etc
    - Number of pions per run normalized by trigger for each trigger type
   
+- Ensure you can process all events from all files from script:
+  - Separate root files by run number, use hadd to merge multiple files
+
+  Now make the following plots:
+  
+  - Number of pions vs Run number
+  - Number of EHT0 trigger vs run numbe
+  - Number of pions normalized by number EHT0 trigger per run  vs run number
+  - Access spin information and plot spin state for all events from all files
+
+- Understand the pion plots:
+  - Given two photon energies E1 and E2 and their opening angle, derive expression for these quantities: pion invariant mass M, E_gg, Z_gg. From the expression, try to interpret how they will change will photon/pion energy
+  - From the data, plot M, E_gg, Z_gg, pion y vs pion x.
+  - Apply your understanding from the derivation to make sense of the plots.
 
 
 
