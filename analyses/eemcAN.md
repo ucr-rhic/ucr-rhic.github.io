@@ -49,6 +49,12 @@ How to generate DST files
 - Submit the jobs using STAR scheduler as: `star-submit sumsJobs.xml`
 
 
+How to read the DST
+---------------------
+
+- Follow this example [here](https://github.com/latifkabir/BrightSTAR/blob/master/studentsAna/scripts/ReadEEmcNanoTree.C).
+
+
 **Excersices**
 
 - Document `get_filelist` command
@@ -70,7 +76,7 @@ How to generate DST files
   - Access spin information and plot spin state for all events from all files
 
 - Understand the pion plots:
-  - Given two photon energies E1 and E2 and their opening angle, derive expression for these quantities: pion invariant mass M, E_gg, Z_gg. From the expression, try to interpret how they will change will photon/pion energy
+  - Given two photon energies E1 and E2 and their opening angle, derive expression for these quantities: pion invariant mass M, Z_gg, d_gg. From the expression, try to interpret how they will change will photon/pion energy
   - From the data, plot M, Z_gg, d_gg, p_t, E, P, pion y vs pion x.
   - Apply your understanding from the derivation to make sense of the plots.
 
