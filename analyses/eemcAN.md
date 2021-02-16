@@ -53,7 +53,7 @@ Resources
 
   Now make the following plots:
   - Number of pions vs Run number
-  - Number of EHT0 trigger vs run numbe
+  - Number of EHT0 trigger vs run number
   - Number of pions normalized by number EHT0 trigger per run  vs run number
   - Access spin information and plot spin state for all events from all files
 
