@@ -43,6 +43,7 @@ Resources
 				   \|/							|						
 			       STAR Analysis (StRoot)-----------------> Generate DST ---|   
 ```
+
 How to generate DST files
 -----------------------------
 
