@@ -51,6 +51,14 @@ Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
                                  
 ```
 
+How to generate DST files
+-----------------------------
+
+- Download and compile `BrightSTAR` analysis library on RCF following the instructions [here](https://github.com/latifkabir/BrightSTAR).
+- Modify `sumsJob.xml` file to update your trigger/dataset information and various paths.
+- Replace the function called in `jobMacro` with approprite function for DST generation.
+- Submit the jobs using STAR scheduler as: `star-submit sumsJobs.xml`
+
 
 ![](Analysis_Workflow_EMjet_AN.jpg)
 

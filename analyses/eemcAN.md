@@ -11,6 +11,9 @@ Resources
 
 
 - UCR Spin Analysis Tools Github repository: [BrightStar](https://github.com/latifkabir/BrightSTAR)
+- Calss references for EEMC pion Tree: [here](https://www.star.bnl.gov/webdata/dox/html/dir_f55c6bc819b98feb2a7a93228ad627a8.html)
+- Class reference for EEMC DST event information:[here](https://github.com/latifkabir/BrightSTAR/blob/master/StRoot/BrContainers/TStEventData.h) 
+
 
 ```
  Students Meeting ----> UCR Meeting ----> FMS Meeting -------> PWG Meeting -----> Working on
@@ -35,6 +38,15 @@ Resources
 			       STAR Analysis (StRoot)-----------------> Generate DST ---|   
 
 ```
+
+How to generate DST files
+-----------------------------
+
+- Download and compile `BrightSTAR` analysis library on RCF following the instructions [here](https://github.com/latifkabir/BrightSTAR).
+- Modify `sumsJob.xml` file to update your trigger/dataset information and various paths.
+- Replace the function called in `jobMacro` with `RunEEmcNanoDstMaker`.
+- Ensure `config/config.cgf` has `ENABLE_EEMC` and `ENABLE_EVT` set to 1 and other detectors to 0.
+- Submit the jobs using STAR scheduler as: `star-submit sumsJobs.xml`
 
 
 **Excersices**
