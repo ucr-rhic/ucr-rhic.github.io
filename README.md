@@ -136,6 +136,7 @@ Learn About STAR Detectors
   - [TPC](https://drupal.star.bnl.gov/STAR/event/2020/06/11/star-juniors-detector-meeting-tpc)
   - [EPD](https://youtu.be/OfJTq5cFe4U)
   - [BEMC](https://drupal.star.bnl.gov/STAR/meetings/star-collaboration-meeting-september-2020/juniors-day/star-barrel-calorimeter-and-shower-ma)
+  - [TOF](https://drupal.star.bnl.gov/STAR/system/files/TOFatJuniorsDay2021.pdf)
 
 - **Past Thesis:** Any STAR thesis has description of relevant detectors. Drupal page for all STAR theses is [here](https://drupal.star.bnl.gov/STAR/theses). 
 
