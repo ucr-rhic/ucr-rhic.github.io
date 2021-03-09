@@ -10,7 +10,9 @@ On many systems this is pre-installed.  Before continuing here please check out 
 
 In order to log in you must pass through two layers to get to the servers where you will be working.  The first layer is simply a gateway node.  __**No actual work should be done on the gateway nodes**__.  Gateway nodes for STAR work are the main RCF one *ssh.sdcc.bnl.gov* and the NoMachine nodes *nx.rcf.bnl.gov*.  To find the most recent available ssh gateways check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways). There is also a special STAR gateway node *stargw.starp.bnl.gov* that can be used to log into the online machines at STAR which are to be used only when you are working with raw data from the detectors.  This tutorial will not discuss access to this gateway since it is only for very specialized use.
 
-After you log in to the gateway you need to log into one of many other nodes that you can use for analysis or for setting up No Machine virtual desktop.
+__EDIT (March 9, 2021): When RCF switched to a unified organization "Scientific Data and Computing Center" (SDCC) not only did the gateways change they also got rid of the NX gateways in favor of new ways of using NoMachine briefly discussed here. For new instructions go [here](rcf_remote_login.md).__
+
+~~After you log in to the gateway you need to log into one of many other nodes that you can use for analysis or for setting up No Machine virtual desktop.~~
 
 These instructions will guide you through most of these steps with the relevant links.
 
@@ -21,10 +23,11 @@ These instructions will guide you through most of these steps with the relevant 
 	- For the *ssh.sdcc* gateway the command is `ssh username@ssh.sdcc.bnl.gov`
 		+ Where *username* should be replaced by the user name of your SDCC account.
 		+ Upon success you will see a warning message that shows you have logged into a Federal computer system and see a terminal prompt that includes text like *username@rsshXX*, where 'XX' will be replaced by whatever gateway number you have logged into.
-	- For No Machine gateway stop and follow instructions [here](rcf_remote_login.md) instead.  Once you get to the virtual desktop open a terminal and continue with step 4.
-		+ All the following commands should be executed from the virtual desktop terminals.
-		+ __**IT IS BEST NOT TO EXECUTE ANY COMMANDS ON THE TERMINAL YOU USED FOR PORT FORWARDING TO SET UP NO MACHINE EXCEPT TO TERMINATE THE CONNECTION**__
-		+ Once you are done with No Machine you can terminate the port forwarding connection using `exit`.
+	- For NoMachine ~~gateway~~ stop and follow instructions [here](rcf_remote_login.md) instead.  Once you get to the virtual desktop open a terminal and continue with step 4.
+		+ EDIT(March 9, 2021): The hints below no longer apply but kept here for arhival reasons.
+		+ ~~All the following commands should be executed from the virtual desktop terminals.~~
+		+ ~~__**IT IS BEST NOT TO EXECUTE ANY COMMANDS ON THE TERMINAL YOU USED FOR PORT FORWARDING TO SET UP NO MACHINE EXCEPT TO TERMINATE THE CONNECTION**__~~
+		+ ~~Once you are done with No Machine you can terminate the port forwarding connection using `exit`.~~
 4. On the gateway prompt, SSH into one of the analysis nodes named *rcasXXXX* where 'XXXX' needs to be replaced with the number of the node you want to log into.  Here I demonstrate STAR node *rcas6005*, `ssh rcas6005`
 	- If successful, you will be prompted for your password.  Type it in and you will be on the rcas nodes.
 	- There are several nodes that can be used by STAR analyzers.  The least populated node can be accessed by using the command `rterm -i` on the gateway prompt.  The drawback is that any command history, work, running processes, etc. executed on one node __**cannot**__ be accessed from another.
@@ -65,18 +68,22 @@ Summary
 2. Run `ssh -tAX username@ssh.sdcc.bnl.gov rterm -i`
 
 ### No Machine Connect
-1. Load Private key into ssh-agent
-2. Run `ssh -L <port>:nx.rcf.bnl.gov:22  username@ssh.sdcc.bnl.gov`
-	- *port* should be an open port with a high value random number between 4096 and 65535 and is the port to use for port forwarding.  It should match the saved port number in your No Machine connect file or for first time pick one and stay with it.
+__EDIT(March 9, 2021): Steps *1* and *2* no longer apply with new NoMahine login method but kept here for arhival reasons.
+1. ~~Load Private key into ssh-agent~~
+2. ~~Run `ssh -L <port>:nx.rcf.bnl.gov:22  username@ssh.sdcc.bnl.gov`~~
+	- ~~*port* should be an open port with a high value random number between 4096 and 65535 and is the port to use for port forwarding.  It should match the saved port number in your No Machine connect file or for first time pick one and stay with it.~~
 3. Start No Machine
-4. If you have a previously saved connection click on that and done. If not follow these instructions to create a new connection
-	i. Select New Connection
-	ii. Select the 'SSH protocol' option
-	iii. Enter Host - `localhost` and Port - *port* number used above.
-	iv. Authenticate using the 'Password' option
-	v. HTTP Proxy - Do not use proxy option
-	vi. Specify any general name for the connection and click on the Done button.
-	vii. Connect and login with the RACF kerberos credentials. Click on the New desktop, select KDE virtual desktop and proceed.
+4. If you have a previously saved connection click on that and done. If not follow these instructions to create a new connection  
+	i. Select New Connection  
+	~~ii. Select the 'SSH protocol' option~~  
+	ii. Select the 'NX protocol' option  
+	~~iii. Enter Host - `localhost` and Port - *port* number used above.~~  
+	iii. Enter Host - *nx.sdcc.bnl.gov* and Port - *4000*  
+	iv. Authenticate using the 'Password' option  
+	v. HTTP Proxy - Do not use proxy option  
+	vi. Specify any general name for the connection and click on the Done button.  
+	vii. Connect and login with the RACF kerberos credentials then enter your MFA code. Click on the New desktop, select KDE virtual desktop.
+	viii. Click *Automatically select a node*
 
 ### Transfer Files using scp to and from RCF ([tutorial](transfer_files_rcf.md))
 __**IMPORTANT:Either make sure ssh-agent has key loaded or use option '-i' to give private key explicitly**__
