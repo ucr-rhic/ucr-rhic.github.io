@@ -1,4 +1,4 @@
-Diffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
+exitDiffractive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 =====================================================================
 
 **Motivation:**
@@ -80,6 +80,12 @@ How to generate DST files
 **Exercises**
 
 - Motivation
+
+- Understand Jet Finding Algorithm:
+  - Understand how Anti-k_t algorithm works
+  - Implement basic jet finder program:
+    - Check FastJet Manual and take their example (first one, ~15 lines of c++ code), compile it and run it. Access jet properties of identified jets.  Next pay changing the constituent particles.
+    - Now go back to `StJetMaker2012.cxx` and understand different steps.
 
 - Generate DST for EM-jets in FMS and EEMC
 

@@ -88,8 +88,9 @@ How to read the DST
 
 - Understand the pion plots:
   - Given two photon energies E1 and E2 and their opening angle, derive expression for these quantities: pion invariant mass M, Z_gg, d_gg. From the expression, try to interpret how they will change will photon/pion energy
-  - From the data, plot M, Z_gg, d_gg, p_T, E, p, pion y vs pion x.
+  - From the data, plot M, Z_gg, d_gg, p_T, E, p, pion y vs pion x, pion eta, pion phi.
   - Apply your understanding from the derivation to make sense of the plots.
+  - Use photon camdidates from the photon branch to calculate pion invariant mass and compare it pion invariant mass from pion branch.
 
 
 
