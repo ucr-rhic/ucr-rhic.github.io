@@ -75,6 +75,7 @@ How to generate DST files
 - [Diffractive jet basic study](https://drive.google.com/file/d/1FAP7NyflAx0lDKqFWk_NFi8_L_M2mF3h/view?usp=sharing) (12/07/2020, Note: EEMC is not correct)
 - [FMS Hot Channel QA](https://drive.google.com/file/d/1QWTYkr4dsgWogJ9amSMzELmPnDHZq_Fu/view?usp=sharing) (01/22/2021)
 - [EEMC QA](https://drive.google.com/drive/folders/1cNzlFNxWKPOu_jhGKsjKWYYbVINjVNyr) (02/12/2021)
+- [FMS EEMC RP QA in PWG](https://drupal.star.bnl.gov/STAR/system/files/userfiles/6483/diffractive%20EMjet%20analysis%20033121(1).pdf)
 
 
 **Exercises**
