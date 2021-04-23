@@ -92,7 +92,10 @@ How to read the DST
   - Apply your understanding from the derivation to make sense of the plots.
   - Use photon camdidates from the photon branch to calculate pion invariant mass and compare it pion invariant mass from pion branch.
 
-
+- Towards Asymmetry Calculations:
+  - Make a plot showing trigger distributions among all events
+  - Take the two leading triggers from your trigger distribution and for those two triggers plot pion invariant mass. Normalized the plots and super impose those two pion invariant mass plots on each other to compare them.
+  - Make one or two slides explaining how to calculate A_LL and list any variables that you do not have in your analysis tree
 
 						
 
