@@ -4,7 +4,7 @@ Remote Desktop for RCF Using NX/NoMachine
 __EDIT (March 9, 2021): RCF transitioned to SDCC so now new login methods are requried. Old instructions have been strikethroughed but kept for archival reasons.__
 
 ~~Ref: [see here](https://www.racf.bnl.gov/docs/services/nx)~~  
-Ref: [see here](https://www.sdcc.bnl.gov/resources/services/nomachine-nx)
+Ref: [see here](https://www.sdcc.bnl.gov/information/services/how-use-nx-sdcc)
 
 Remote desktop access to RCF is supported by the latest NX technology compared to classic VNC session. RCF has partnered with `NoMachine` to provide the service.
 
@@ -12,7 +12,7 @@ Remote desktop access to RCF is supported by the latest NX technology compared t
 
 As of March 9, 2021, the SDCC NX servers can be accessed via web browser or the NoMachine client.
 
-To use either option, one needs to set up multifactor authentication (MFA) with SDCC for which instructions can be found [here](https://www.sdcc.bnl.gov/users/authentication/unified-mfa).
+To use either option, one needs to set up multifactor authentication (MFA) with SDCC for which instructions can be found [here](https://www.sdcc.bnl.gov/information/unified-multi-factor-authentication). __NOTE__:This MFA is different than the one for STAR drupal login.
 
 **Steps for Web Browser**
 
@@ -60,7 +60,7 @@ Downloads -> Enterprise Products Evaluation -> NoMachine Enterprise Client
 <a name="NxLoginStep"></a>9. Connect and login first entering your RACF kerberos credentials.
 
 10. After entering those credentials it will then ask you for another password. This will be the password from the MFA you setup. Enter it
-    - To setup MFA follow instructions [here](https://www.sdcc.bnl.gov/users/authentication/unified-mfa)
+    - To setup MFA (not the same as STAR drupal) follow instructions [here](https://www.sdcc.bnl.gov/information/unified-multi-factor-authentication)
 
 11. Pick *Create a new KDE desktop* or another desktop of your liking
 

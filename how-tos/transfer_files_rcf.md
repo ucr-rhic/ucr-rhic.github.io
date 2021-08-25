@@ -1,6 +1,6 @@
 Getting Files into and out of BNL RCF servers
 ================================================
-Ref: [RCF tutorial](https://www.racf.bnl.gov/docs/services/ftp)
+Ref: [SDCC tutorial](https://www.sdcc.bnl.gov/information/services/sftp-gateways-transfer-files-using-sftp-gateways)
 
 This tutorial will walk you through how to copy files that you have stored on RCF onto your local desktop or laptop.  If you'll notice there is no *move* command since a local machine should not be able to modify files on a remote machine and vice versa.
 
@@ -17,8 +17,8 @@ Linux, Mac OS X, and Windows Subsystem for Linux
 Stands for SSH (or Secure) File Transfer Protocol.  It is works much like ssh except for one major difference, you can browse both local and remote files simultaneously.  For this reason, sftp has its own set of commands to do this.  Although most of these commands are similar to the usual Linux commands for browsing files I will go over the important ones here.
 
 When connecting via sftp no setting file is loaded like when you ssh and tab completion may be limited or nonexistent.  I recommend using this method when you don't know where or what files you want to copy and need real time interaction with the files on the local and remote machine.
-2. Run the sftp command to connect to RCF FTP machine `sftp \<username\>@rftpexp.rhic.bnl.gov`
-	- Even with key loaded may need to give *sftp* key location. This can be done with option *-i* e.g. `sftp -i \<privatekey\> \<username\>@rftpexp.rhic.bnl.gov`
+2. Run the sftp command to connect to SDCC SFTP machine `sftp \<username\>@sftp.sdcc.bnl.gov`
+	- Even with key loaded may need to give *sftp* key location. This can be done with option *-i* e.g. `sftp -i \<privatekey\> \<username\>@sftp.sdcc.bnl.gov`
 	- If connection is successful you should see the following output on terminal window
 	> sftp\>
 3. You can browse and transfer files using commands below

@@ -1,8 +1,8 @@
 Generate A New Key Pair
 ===========================
-Ref: [RCF tutorial](https://www.racf.bnl.gov/docs/authentication/ssh/keygen)
+Ref: [SDCC tutorial](https://www.sdcc.bnl.gov/information/ssh/generate-ssh-key-pairs)
 
-SSH key authentication is needed to log into the RHIC computing facility (RCF) gateway *ssh.sdcc.bnl.gov*, or check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways) for most recent available ssh gateways.
+SSH key authentication is needed to log into the old RHIC computing facility (RCF) or the new (2021+) Software and Data Computing Center (SDCC) gateway *ssh.sdcc.bnl.gov*, or check [here](https://www.sdcc.bnl.gov/information/ssh/ssh-gateways) for most recent available ssh gateways. Links to modify, upload, or view keys can be found [here](https://www.sdcc.bnl.gov/information/ssh/ssh-key-utilities)
 
 SSH keys are a convenient way to authenticate users logging into remote machines.  The idea is that there is a private and public key.  The public key is kept on the server/remote machine you want to log into.  The private key you keep and typically requires a pass-phrase to use.  Although you can generate a private key without a password this will defeat the purpose of using key pairs to authenticate.
 
@@ -13,7 +13,7 @@ The authentication happens when the server you are logging into checks the hash 
 
 Linux and Windows 10 machines that have OpenSSH installed
 -----------------------------------------------------------
-1. Open a terminal window (Powershell recommended on Windows) on the desktop machine or laptop that you will be using to login to the RCF/ACF.
+1. Open a terminal window (Powershell recommended on Windows) on the desktop machine or laptop that you will be using to login to the RCF/SDCC.
 
 2. At the prompt, type: `ssh-keygen -t rsa`
 	- You will see output similar to the following: "Generating public/private rsa key pair."
@@ -43,7 +43,7 @@ Linux and Windows 10 machines that have OpenSSH installed
 	- This is normal since your laptop is displaying using the 'SHA256' standard instead of the *md5* standard.  To see the *md5* standard run the command `ssh-keygen -lf key.pub -E md5`
 		- [Command Ref](https://superuser.com/questions/929566/sha256-ssh-fingerprint-given-by-the-client-but-only-md5-fingerprint-known-for-se)	
 
-7. Copy the key fingerprint value from the output above.  To upload the key, browse to [RCF key upload](https://web.racf.bnl.gov/Facility/SshKeys/UploadSshKey.php)
+7. Copy the key fingerprint value from the output above.  To upload the key, browse to [SDCC new key upload](https://web.racf.bnl.gov/Facility/SshKeys/UploadSshKey.php)
 	+ In order to view the form, you will be prompted for your Kerberos user name and password.
 
 8. Click the Browse button, and in the dialog box, navigate to your .ssh directory (or the directory in which your public key file is stored).  If your browser does not display hidden directories (ones that begin with a period), then you will have to type in or cut and paste the name of the public key file into the dialog box. Enter the full name of the public key file (as displayed in output earlier), including the path and the .pub file extension (if you copy and paste the name or path, take care to leave off the period at the end of the line with the public key file name).
@@ -70,7 +70,7 @@ Disclaimer: PuTTY is 3rd party telnet/ssh tool for Windows, however due to Windo
 3. Once key is generated you will see the key fingerprint as [above](#KeyFingerprint)
 4. Enter a pass-phrase for the key in the box labeled as such
 5. <a name="SavePuttyKey"></a>**Important** Click *Save public key* and give name and location (keep .pub extension [see](#KeyFingerprint)) Click *Save private key* and give name and location same as public key without *.pub* extension.
-6. Finished: you can use this key to login into RCF using `putty.exe` go [here](placeholder) to see how to do so.
+6. Finished: you can use this key to login into SDCC using `putty.exe` go [here](placeholder) to see how to do so.
 
 ### Convert keys from Linux to Windows PuTTY keys
 I leave this here in case you had a public private key pair generated with Linux and now want to use it on Windows with PuTTY or vice versa.

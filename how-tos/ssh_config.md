@@ -48,7 +48,7 @@ Here I list the other options that would be useful for RCF connections
 
 RCF Example
 -----------
-Below is an example showing how to write the config file for connecting to RCF ssh gateway *ssh.sdcc.bnl.gov*.  To find the most recent available ssh gateways check [here](https://www.racf.bnl.gov/docs/services/Ssh/gateways)
+Below is an example showing how to write the config file for connecting to RCF ssh gateway *ssh.sdcc.bnl.gov*.  To find the most recent available ssh gateways check [here](https://www.sdcc.bnl.gov/information/ssh/ssh-gateways)
 > Host MyRcfConnection  
 > HostName ssh.sdcc.bnl.gov  
 > User username  

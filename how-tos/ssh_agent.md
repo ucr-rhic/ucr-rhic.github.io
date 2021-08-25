@@ -1,6 +1,6 @@
 How to use an authentication agent (SSH agent) to store your private key for SSH transactions
 ===============================================================================================
-Ref: [RCF tutorial](https://www.racf.bnl.gov/docs/authentication/ssh/sshagent)
+Ref: [SDCC tutorial](https://www.sdcc.bnl.gov/information/ssh/ssh-agent)
 
 In order to keep from having to tell ssh which key to use during log in you can use an ssh authentication agent or more commonly called an ssh agent.  The ssh agent will store the key for you and when you try to ssh with any connection it will check the loaded keys and use the appropriate one.
 
