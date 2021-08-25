@@ -96,6 +96,9 @@ Current Spin/Cold QCD Analyses
 [Recent Public Talks/Presentations](talks/talks.md)
 ---------------------------------------------------
 
+[In the press](press/public_press.md)
+---------------------------------------------------
+
 Forward Upgrade Activities
 -----------------------------
 
