@@ -24,7 +24,7 @@ Current Group Members
 Weekly Group Meeting
 -------------------------
 
-- Time: Friday 12 PM UCR Time / 3 PM BNL Time
+- Time: Wednesday 11:30 AM UCR Time / 2:30 PM BNL Time
 
 - Meeting URL: [https://ucr.zoom.us/j/93165338201](https://ucr.zoom.us/j/93165338201)
 
@@ -49,6 +49,8 @@ One tap mobile
 ```
 
 - Google Drive: [Link](https://drive.google.com/drive/folders/0B6drqx0255gLd3ZZVzFNb0JMTk0)
+
+- Google Calendar: [Link](https://calendar.google.com/calendar/embed?src=hs0vhpcvmgdvb9l34mavm7sv6g%40group.calendar.google.com&ctz=America/Los_Angeles)
 
 Meeting Summary
 -----------------
