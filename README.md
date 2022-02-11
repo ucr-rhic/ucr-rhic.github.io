@@ -24,7 +24,7 @@ Current Group Members
 Weekly Group Meeting
 -------------------------
 
-- Time: Wednesday 11:30 AM UCR Time / 2:30 PM BNL Time
+- Time: Friday 12:00 PM UCR Time / 3:00 PM BNL Time
 
 - Meeting URL: [https://ucr.zoom.us/j/93165338201](https://ucr.zoom.us/j/93165338201)
 
