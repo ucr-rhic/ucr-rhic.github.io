@@ -87,13 +87,15 @@ __EDIT(March 9, 2021): Steps *1* and *2* no longer apply with new NoMahine login
 	vii. Connect and login with the RACF kerberos credentials then enter your MFA code. Click on the New desktop, select KDE virtual desktop.
 	viii. Click *Automatically select a node*
 
-### Transfer Files using scp to and from RCF ([tutorial](transfer_files_rcf.md))
-__**IMPORTANT:Either make sure ssh-agent has key loaded or use option '-i' to give private key explicitly**__
+### Transfer Files using sftp to and from RCF ([tutorial](transfer_files_rcf.md))
+__*IMPORTANT:Either make sure ssh-agent has key loaded or use option '-i' to give private key explicitly*__
 
-These commands must be executed on your laptop terminal not the RCF nodes or gateways
-- Download: `scp username@rftpexp.rhic.bnl.gov:/rcf/path/to/file /local/path/to/copy/to/`
-- Upload: `scp /local/file/to/copy username@rftpexp.rhic.bnl.gov:/rcf/path/to/copy/to/`
-- __BONUS__: `sftp username@ssh.sdcc.bnl.gov`
+__Edit(February 28, 2022): SDCC discontinued use of old rftpexp gateways and scp see [here](https://www.sdcc.bnl.gov/news-events/sdcc-announcements/legacy-rftpexp-gateways-be-retired).__
+
+These commands must be executed on your laptop terminal not the RCF nodes or gateways. *Note: wildcard expansions are not processed by sftp unless used inside double quotes [see examples here](transfer_files_rcf.md)
+- Download: `sftp "username@sftp.sdcc.bnl.gov:/rcf/path/to/file /local/path/to/copy/to/`
+- Upload: `sftp /local/file/to/copy username@sftp.sdcc.bnl.gov.rhic.bnl.gov:/rcf/path/to/copy/to/`
+- *Interactive session*: `sftp username@sftp.sdcc.bnl.gov`
 
 ### Display image files with existing X11
 1. `display myimage.png`
