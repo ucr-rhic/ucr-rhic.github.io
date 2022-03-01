@@ -40,15 +40,19 @@ When connecting via sftp no setting file is loaded like when you ssh and tab com
 ### SFTP command line mode
 [Ref sftp command line](https://stackoverflow.com/questions/16721891/single-line-sftp-from-terminal), [Ref wildcards](https://groups.google.com/g/comp.unix.shell/c/c3NdGKz86WQ), [Ref wildcards](https://stackoverflow.com/questions/58344727/downloading-files-from-sftp-server-with-wildcard-and-in-a-loop)
 
-SFTP can also be used to transfer individual files all in a single command from a terminal. It is done much the same way as outlined below for [scp](#ScpLinux). The problem is that wildcard expansions, like "\*" don't work in the same way as for [scp](#ScpLinux). Wildcards must be used inside double quotes as demonstrated in the examples below.
+SFTP can also be used to transfer individual files all in a single command from a terminal; __WARNING:There is no way to check file overwrite with sftp__. Uploading a file requires feeding the `put` command from *stdout* to the *stdin* when executing sftp. This can be done using the pipe operator "|" in c-shell (see example belwo) or here strings "<<<" in bash (not tested but used in [ref](https://stackoverflow.com/questions/16721891/single-line-sftp-from-terminal) ). Downloading a file is done in much the same way as outlined below for [scp](#ScpLinux). The biggest difference is a problem with wildcard expansions, like "\*"; they don't work in the same way as for [scp](#ScpLinux). Wildcards must be used inside double quotes as demonstrated in the example below. 
 - To copy a file from local machine to RCF  
-	- `sftp <Source File> <username>@sftp.sdcc.bnl.gov:<Full Path>/[Destination File Name]`  
-	- If *Source File* contains wild cards then you should use enclose it in double quotes, i.e. `"<Source File>"`  
-		- Example `sftp "*.pdf" <username>@sftp.sdcc.bnl.gov:/remote/path/to/transfer/to` will copy all pdfs in the current directory of your laptop to the RCF servers
+	- `echo "put <Source File>" | sftp <username>@sftp.sdcc.bnl.gov:<Full Path>/`  
+	- Where *Source File* is the file you want to copy to RCF
+		+ *Source File* can contain wildcad characters
+	- The *Full Path* needs to be the full path as it appears using a `pwd` command on RCF.  You cannot do local with respect to home directory and even *~* shortcut will not work.
+	- Example: Copy all pdfs in the current directory of your laptop to the RCF servers
+	> `echo "put *.pdf" | <username>@sftp.sdcc.bnl.gov:/remote/path/to/upload`
 - To copy files from RCF to local machine
 	- `sftp <username>@sftp.sdcc.bnl.gov:<Full Path>/<Source File> [Destination File Name]`
 	- If you want to use wildcards in *Source File* then then should enclose the whole location in double quotes i.e. `"<username>@sftp.sdcc.bnl.gov:<Full Path>/<Source File>"`
-		- Example: `sftp "user@sftp.sdcc.bnl.gov:/remote/path/to/file/*.pdf" .` will transfer all pdf files to current direcotry on your laptop
+	- Example: download all pdf files in a given rcas directory to your laptop
+	> `sftp "user@sftp.sdcc.bnl.gov:/remote/path/to/file/*.pdf" .`
 
 <a name="ScpLinux"></a>
 ### SCP
