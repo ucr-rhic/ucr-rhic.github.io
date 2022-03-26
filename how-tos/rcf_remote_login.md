@@ -25,26 +25,18 @@ Downloads -> Enterprise Products Evaluation -> NoMachine Enterprise Client
 ```
 `DO NOT` download and install the whole package (just do client), otherwise it will silently start `nx` server on your computer.
 
-1. Start the NoMachine Client Application.
-
-2. Select New Connection
-
-3. Select the 'NX protocol' option
-
-4. Enter Host - `nx.sdcc.bnl.gov` and Port - `4000`
-
-5. Authenticate using the 'Password' option
-
-6. HTTP Proxy - Do not use proxy option
-
-7. Specify any general name for the connection and click on the Done button.
- 
-<a name="NxLoginStep"></a>9. Connect and login first entering your RACF kerberos credentials.
-
-10. After entering those credentials it will then ask you for another password. This will be the password from the MFA you setup. Enter it
-    - To setup MFA (not the same as STAR drupal) follow instructions [here](https://www.sdcc.bnl.gov/information/unified-multi-factor-authentication)
-
-11. Pick *Create a new KDE desktop* or another desktop of your liking
-
+1. Set up multifactor authentication (MFA) with SDCC [here](https://www.sdcc.bnl.gov/information/unified-multi-factor-authentication)  
+2. Start the NoMachine Client Application.  
+3. Select New Connection  
+4. Select the 'NX protocol' option  
+5. Enter Host - `nx.sdcc.bnl.gov` and Port - `4000`  
+6. Authenticate using the 'Password' option  
+7. HTTP Proxy - Do not use proxy option  
+8. Specify any general name for the connection and click on the Done button.  
+<a name="NxLoginStep"></a>
+9. Connect and login first entering your RACF kerberos credentials.  
+10. After entering those credentials it will then ask you for another password. This will be the password from the MFA you setup. Enter it  
+    - To setup MFA (not the same as STAR drupal) follow instructions [here](https://www.sdcc.bnl.gov/information/unified-multi-factor-authentication)  
+11. Pick *Create a new KDE desktop* or another desktop of your liking  
 12. Select *Automatically select a node* or pick your favorite node :)
 

@@ -10,9 +10,9 @@ Quick Start
 1. Web search for BNL new user account
 2. Fill out form for new user account
 3. Wait until you get approved and have a id/registration number
-4. Request a Computer account using 
-	i. Generate a public and private ssh key by following instructions [here](generate_keys.md)
-	ii. Only upload __public__ key (.pub extension)
+4. Request a Computer account using  
+	i. Generate a public and private ssh key by following instructions [here](generate_keys.md)  
+	ii. Only upload __public__ key (.pub extension)  
 5. Once account is approved you will get a username and temp password with instructions on how to change your password.
 6. Log in to the computing nodes using one of the methods below to change your password
 
@@ -20,24 +20,24 @@ Quick Start
 Connecting to BNL can be done using SSH or NoMachine. The NoMahcine is the preferred way to go if you want a graphical interface. SSH can utilize graphics using X11 but it is __really slow__.
 
 #### Flavors of Linux including MacOS and Windows Subsystem for Linux [WSL](windows_setup.md)
-1. Load Private key into ssh-agent
-	i. `ssh-add -l` to check status of ssh-agent program and if any keys are loaded
-	ii. `ssh-add <path/to/private/key>` add private key to ssh-agent it will ask for password if not then you probably chose the pubic key (.pub)
-2. Run `ssh -tA <username>@ssh.sdcc.bnl.gov rterm -i`
-	- `ssh -tAX username@ssh.sdcc.bnl.gov rterm -i` to connect with X11 [see also](setup_xwindow.md)
+1. Load Private key into ssh-agent  
+	i. `ssh-add -l` to check status of ssh-agent program and if any keys are loaded  
+	ii. `ssh-add <path/to/private/key>` add private key to ssh-agent it will ask for password if not then you probably chose the pubic key (.pub)  
+2. Run `ssh -tA <username>@ssh.sdcc.bnl.gov rterm -i`  
+	- `ssh -tAX username@ssh.sdcc.bnl.gov rterm -i` to connect with X11 [see also](setup_xwindow.md)  
 3. Enter your kerberos password
 4. Enjoy :)
 
 #### No Machine Connect
 1. Set up multifactor authentication (MFA) with SDCC [here](https://www.sdcc.bnl.gov/information/unified-multi-factor-authentication)
-2. Start NoMachine and click on your saved connection or use [website](https://nx.sdcc.bnl.gov/nxwebplayer)
-	- Setup NoMachine connection
-		i. Select New Connection 
+2. Start NoMachine and click on your saved connection or use [website](https://nx.sdcc.bnl.gov/nxwebplayer)  
+	- Setup NoMachine connection  
+		i. Select New Connection  
 		ii. Select the 'NX protocol' option  
 		iii. Enter Host - *nx.sdcc.bnl.gov* and Port - *4000*  
-		iv. Authenticate using the 'Password' option
+		iv. Authenticate using the 'Password' option  
 		v. HTTP Proxy - Do not use proxy option  
-		vi. Specify any general name for the connection and click on the Done button.
+		vi. Specify any general name for the connection and click on the Done button.  
 3. Enter your login credentials
 	- Username is the same as the one for your computer account
 	- Password is your kerberos password
