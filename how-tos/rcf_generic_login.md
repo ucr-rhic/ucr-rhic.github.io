@@ -3,6 +3,64 @@ Logging into Brookhaven National Lab's (BNL) Computer System
 
 [Main help page for new users](https://www.sdcc.bnl.gov/information/getting-started)
 
+Quick Start
+----------
+
+### Get BNL ID and Request Computer Account
+1. Web search for BNL new user account
+2. Fill out form for new user account
+3. Wait until you get approved and have a id/registration number
+4. Request a Computer account using 
+	i. Generate a public and private ssh key by following instructions [here](generate_keys.md)
+	ii. Only upload __public__ key (.pub extension)
+5. Once account is approved you will get a username and temp password with instructions on how to change your password.
+6. Log in to the computing nodes using one of the methods below to change your password
+
+### Connect to computing nodes (RCAS)
+Connecting to BNL can be done using SSH or NoMachine. The NoMahcine is the preferred way to go if you want a graphical interface. SSH can utilize graphics using X11 but it is __really slow__.
+
+#### Flavors of Linux including MacOS and Windows Subsystem for Linux [WSL](windows_setup.md)
+1. Load Private key into ssh-agent
+	i. `ssh-add -l` to check status of ssh-agent program and if any keys are loaded
+	ii. `ssh-add <path/to/private/key>` add private key to ssh-agent it will ask for password if not then you probably chose the pubic key (.pub)
+2. Run `ssh -tA <username>@ssh.sdcc.bnl.gov rterm -i`
+	- `ssh -tAX username@ssh.sdcc.bnl.gov rterm -i` to connect with X11 [see also](setup_xwindow.md)
+3. Enter your kerberos password
+4. Enjoy :)
+
+#### No Machine Connect
+1. Set up multifactor authentication (MFA) with SDCC [here](https://www.sdcc.bnl.gov/information/unified-multi-factor-authentication)
+2. Start NoMachine and click on your saved connection or use [website](https://nx.sdcc.bnl.gov/nxwebplayer)
+	- Setup NoMachine connection
+		i. Select New Connection 
+		ii. Select the 'NX protocol' option  
+		iii. Enter Host - *nx.sdcc.bnl.gov* and Port - *4000*  
+		iv. Authenticate using the 'Password' option
+		v. HTTP Proxy - Do not use proxy option  
+		vi. Specify any general name for the connection and click on the Done button.
+3. Enter your login credentials
+	- Username is the same as the one for your computer account
+	- Password is your kerberos password
+4. Click Connect
+5. It will ask for another password if above worked. This is the MFA password. If not then there may be an issue with your computer account
+6. Select create a new desktop and/or pick your favorite vitual desktop *GNOME* or *KDE*
+7. Click *Automatically select a node*
+8. Start a terminal program and connect to computing nodes `rterm -i`
+	- __IMPORTANT:Do not work on the nx gateway. You must ssh into the computing nodes even from NoMachine__
+	- `display` can be used to view *png* files for *pdf* installing a pdf reader is recommended.
+
+
+#### Transfer Files using sftp to and from RCF ([tutorial](transfer_files_rcf.md))
+__*IMPORTANT:Either make sure ssh-agent has key loaded or use option '-i' to give private key explicitly*__
+
+These commands should be executed on the machine you want to upload/download files to/from the RCF nodes
+*Note:* wildcard expansions are not processed by sftp unless used inside double quotes [see examples here](transfer_files_rcf.md)
+
+- Download: `sftp "username@sftp.sdcc.bnl.gov:/rcf/path/to/file /local/path/to/copy/to/`
+- Upload: `echo "put <Source File>" | sftp <username>@sftp.sdcc.bnl.gov:<Full Path>/`
+- *Interactive session*: `sftp username@sftp.sdcc.bnl.gov`
+
+### Long Summary
 Logging into BNL consists of several steps.  Before starting one must fill out a request form to get a valid account with BNL Scientific Data and Computing Center (SDCC) otherwise or perhaps formerly called RHIC Computing Facility (RCF). Requesting a new account can be done with the link above. Once you get an email confirming your account you are ready to log in.
 
 Log in is done using a program called ssh which according to wikipedia;
@@ -14,8 +72,6 @@ In order to log in you must pass through two layers to get to the servers where 
 
 __EDIT (March 9, 2021): When RCF switched to a unified organization "Scientific Data and Computing Center" (SDCC) not only did the gateways change they also got rid of the NX gateways in favor of new ways of using NoMachine briefly discussed here. For new instructions go [here](rcf_remote_login.md).__
 
-~~After you log in to the gateway you need to log into one of many other nodes that you can use for analysis or for setting up No Machine virtual desktop.~~
-
 These instructions will guide you through most of these steps with the relevant links.
 
 1. Create a public and private key and upload to SDCC/RCF database as described [here](generate_keys.md)
@@ -25,11 +81,7 @@ These instructions will guide you through most of these steps with the relevant 
 	- For the *ssh.sdcc* gateway the command is `ssh username@ssh.sdcc.bnl.gov`
 		+ Where *username* should be replaced by the user name of your SDCC account.
 		+ Upon success you will see a warning message that shows you have logged into a Federal computer system and see a terminal prompt that includes text like *username@rsshXX*, where 'XX' will be replaced by whatever gateway number you have logged into.
-	- For NoMachine ~~gateway~~ stop and follow instructions [here](rcf_remote_login.md) instead.  Once you get to the virtual desktop open a terminal and continue with step 4.
-		+ EDIT(March 9, 2021): The hints below no longer apply but kept here for arhival reasons.
-		+ ~~All the following commands should be executed from the virtual desktop terminals.~~
-		+ ~~__**IT IS BEST NOT TO EXECUTE ANY COMMANDS ON THE TERMINAL YOU USED FOR PORT FORWARDING TO SET UP NO MACHINE EXCEPT TO TERMINATE THE CONNECTION**__~~
-		+ ~~Once you are done with No Machine you can terminate the port forwarding connection using `exit`.~~
+	- For NoMachine stop and follow instructions [here](rcf_remote_login.md) instead.  Once you get to the virtual desktop open a terminal and continue with step 4.
 4. On the gateway prompt, SSH into one of the analysis nodes named *rcasXXXX* where 'XXXX' needs to be replaced with the number of the node you want to log into.  Here I demonstrate STAR node *rcas6005*, `ssh rcas6005`
 	- If successful, you will be prompted for your password.  Type it in and you will be on the rcas nodes.
 	- There are several nodes that can be used by STAR analyzers.  The least populated node can be accessed by using the command `rterm -i` on the gateway prompt.  The drawback is that any command history, work, running processes, etc. executed on one node __**cannot**__ be accessed from another.
@@ -63,39 +115,3 @@ SSH options can be combined.  You only need one *-* followed by option character
 
 Both are acceptable.
 
-Summary
-----------
-### Connect RCAS with X11
-1. Load Private key into ssh-agent
-2. Run `ssh -tAX username@ssh.sdcc.bnl.gov rterm -i`
-
-### No Machine Connect
-__EDIT(March 9, 2021): Steps *1* and *2* no longer apply with new NoMahine login method but kept here for arhival reasons.
-1. ~~Load Private key into ssh-agent~~
-2. ~~Run `ssh -L <port>:nx.rcf.bnl.gov:22  username@ssh.sdcc.bnl.gov`~~
-	- ~~*port* should be an open port with a high value random number between 4096 and 65535 and is the port to use for port forwarding.  It should match the saved port number in your No Machine connect file or for first time pick one and stay with it.~~
-3. Start No Machine
-4. If you have a previously saved connection click on that and done. If not follow these instructions to create a new connection  
-	i. Select New Connection  
-	~~ii. Select the 'SSH protocol' option~~  
-	ii. Select the 'NX protocol' option  
-	~~iii. Enter Host - `localhost` and Port - *port* number used above.~~  
-	iii. Enter Host - *nx.sdcc.bnl.gov* and Port - *4000*  
-	iv. Authenticate using the 'Password' option  
-	v. HTTP Proxy - Do not use proxy option  
-	vi. Specify any general name for the connection and click on the Done button.  
-	vii. Connect and login with the RACF kerberos credentials then enter your MFA code. Click on the New desktop, select KDE virtual desktop.
-	viii. Click *Automatically select a node*
-
-### Transfer Files using sftp to and from RCF ([tutorial](transfer_files_rcf.md))
-__*IMPORTANT:Either make sure ssh-agent has key loaded or use option '-i' to give private key explicitly*__
-
-__Edit(February 28, 2022): SDCC discontinued use of old rftpexp gateways and scp see [here](https://www.sdcc.bnl.gov/news-events/sdcc-announcements/legacy-rftpexp-gateways-be-retired).__
-
-These commands must be executed on your laptop terminal not the RCF nodes or gateways. *Note: wildcard expansions are not processed by sftp unless used inside double quotes [see examples here](transfer_files_rcf.md)
-- Download: `sftp "username@sftp.sdcc.bnl.gov:/rcf/path/to/file /local/path/to/copy/to/`
-- Upload: `sftp /local/file/to/copy username@sftp.sdcc.bnl.gov.rhic.bnl.gov:/rcf/path/to/copy/to/`
-- *Interactive session*: `sftp username@sftp.sdcc.bnl.gov`
-
-### Display image files with existing X11
-1. `display myimage.png`

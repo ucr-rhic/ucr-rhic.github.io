@@ -7,6 +7,14 @@ This tutorial will walk you through how to copy files that you have stored on RC
 There are two relevant commands *sftp* and *scp*  I will go through both of these.  These two commands __should__ be executed on your laptop terminal. Exceptions exist depending on what you are transferring from where but in general this how-to will assume you are transferring from RCF servers to your computer.
 
 
+Summary Linux Flavors
+-----------------------
+
+- Download: `sftp "username@sftp.sdcc.bnl.gov:/rcf/path/to/file /local/path/to/copy/to/`
+- Upload: `echo "put <Source File>" | sftp <username>@sftp.sdcc.bnl.gov:<Full Path>/`
+- *Interactive session*: `sftp username@sftp.sdcc.bnl.gov`
+
+
 Linux, Mac OS X, and Windows Subsystem for Linux
 -----------------------------------------------------------
 
