@@ -11,6 +11,10 @@ Inclusive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 - [DNP 2020 Presentation](https://drupal.star.bnl.gov/STAR/system/files/EM_Jet_AN_DNP2020_v4.pdf)
 
 
+## Previous Analysis
+
+- [Mriganka's DIS proceeding](https://pos.sissa.it/203/216/pdf)
+
 ## How To Run
 
 - See [here](https://github.com/latifkabir/BrightSTAR/tree/master/emJetAnalysis)
