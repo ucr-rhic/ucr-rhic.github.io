@@ -175,6 +175,7 @@ Resources
 - [RHIC Cold QCD Plan for 2017 - 2023](https://arxiv.org/abs/1602.03922)
 - [STAR Beam Use Request Drupal Page Link](https://drupal.star.bnl.gov/STAR/public/smd)  
 - [Beam Use Request (BUR) for Runs 21, 23 and data taking in 2023 - 25](https://drupal.star.bnl.gov/STAR/files/BUR2020_final.pdf)
+- [General STAR Information/Organization from PAC meeting Fall 2022](20220916_PACreport.pdf)
 - [STAR mailing lists](https://www.star.bnl.gov/central/lists/)
 - [STAR CVS](https://www.star.bnl.gov/cgi-bin/protected/viewvc.cgi/cvsroot/)
 - [STAR Github Repository](https://github.com/star-bnl)
@@ -188,7 +189,6 @@ Resources
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
 - [STAR Theses Repository](https://drupal.star.bnl.gov/STAR/theses)
 - [STAR Notes Drupal Page](https://drupal.star.bnl.gov/STAR/starnotes)
-
 
 Student Custom Pages
 --------------------
