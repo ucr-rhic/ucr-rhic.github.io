@@ -126,6 +126,7 @@ STAR How-Tos
 	+ [How to use X11 Forwarding](how-tos/setup_xwindow.md)
 	+ [How to use ssh config file](how-tos/ssh_config.md)
 	+ [How to transfer files into and out of RCF](how-tos/transfer_files_rcf.md)
+- [NoMachine ssh/rterm hang on exit](how-tos/ssh_hang_on_exit.md)
 
 Learn About STAR Detectors
 ----------------------------
