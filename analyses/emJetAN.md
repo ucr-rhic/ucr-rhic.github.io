@@ -1,6 +1,10 @@
 Inclusive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 ====================================================================
 
+## Preliminary Result Page
+
+- [Preliminary Result Page](https://drupal.star.bnl.gov/STAR/blog/kabir/run-15-em-jet-using-fms-and-eemc-preliminary-plots)
+
 ## Talk
 
 - [SPIN 2021 Workshop Proceeding](https://drupal.star.bnl.gov/STAR/system/files/SPIN21Proceeding_Latif_v5.pdf)
@@ -26,7 +30,10 @@ Inclusive EM-Jet A<sub>N</sub> at Forward Rapidities With FMS and EEMC
 
 - See Instructions [Here](https://github.com/latifkabir/BrightSTAR/tree/master/emJetAnalysis)
 
-
-## Previous Analysis
+## Previous Similar Analysis
 
 - [Mriganka's DIS proceeding](https://pos.sissa.it/203/216/pdf)
+
+## Comparison With Paper psn0751
+
+- [Comparing Run 15 FMS EM-Jet Results and Cuts With the Paper psn0751](https://drupal.star.bnl.gov/STAR/blog/kabir/comparing-run-15-fms-em-jet-results-and-cuts-paper-psn0751)
