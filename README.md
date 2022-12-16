@@ -177,6 +177,7 @@ Resources
 - [STAR Beam Use Request Drupal Page Link](https://drupal.star.bnl.gov/STAR/public/smd)  
 - [Beam Use Request (BUR) for Runs 21, 23 and data taking in 2023 - 25](https://drupal.star.bnl.gov/STAR/files/BUR2020_final.pdf)
 - [General STAR Information/Organization from PAC meeting Fall 2022](20220916_PACreport.pdf)
+- [Notes on Statistics for Physicists](https://ned.ipac.caltech.edu/level5/Sept01/Orear/Orear.html)[ (pdf file)](Orear.pdf)
 - [STAR mailing lists](https://www.star.bnl.gov/central/lists/)
 - [STAR CVS](https://www.star.bnl.gov/cgi-bin/protected/viewvc.cgi/cvsroot/)
 - [STAR Github Repository](https://github.com/star-bnl)
