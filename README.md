@@ -126,6 +126,7 @@ STAR How-Tos
 	+ [How to use X11 Forwarding](how-tos/setup_xwindow.md)
 	+ [How to use ssh config file](how-tos/ssh_config.md)
 	+ [How to transfer files into and out of RCF](how-tos/transfer_files_rcf.md)
+- [Notes on using Condor and Linux](how-tos/condor_notes.md)
 - [NoMachine ssh/rterm hang on exit](how-tos/ssh_hang_on_exit.md)
 
 Learn About STAR Detectors
@@ -188,6 +189,7 @@ Resources
 - [Disk Usage Status](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
 - [STAR Run Log Browser](https://online.star.bnl.gov/RunLog/)
 - [Check HPSS request status](https://www.star.bnl.gov/devcgi/display_accnt.cgi)
+- [HPSS archiving tools](https://www.sdcc.bnl.gov/information/services/hpss-archiving-tools)
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
 - [STAR Theses Repository](https://drupal.star.bnl.gov/STAR/theses)
 - [STAR Notes Drupal Page](https://drupal.star.bnl.gov/STAR/starnotes)
