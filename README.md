@@ -26,9 +26,9 @@ Weekly Group Meeting
 
 - Time: Friday 12:00 PM UCR Time / 3:00 PM BNL Time
 
-- Meeting URL: [https://ucr.zoom.us/j/93165338201](https://ucr.zoom.us/j/93165338201)
+- Meeting URL: [https://ucr.zoom.us/j/99035375124](https://ucr.zoom.us/j/99035375124)
 
-- Zoom Meeting ID: 931 6533 8201
+- Zoom Meeting ID: 990 3537 5124
 
 - Want to dial in from a phone?
 Dial one of the following numbers:
