@@ -186,7 +186,7 @@ Resources
 - [Shift Sign-Up Page](https://online.star.bnl.gov/ShiftSignup/)
 	+ [Login Info](https://drupal.star.bnl.gov/STAR/comp/sofi/web-access)
 - [STAR RunLog Browser](https://online.star.bnl.gov/RunLog/)	
-- [Disk Usage Status](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
+- [Disk Usage Status](https://monitoring.sdcc.bnl.gov/Facility/GCE/GPFS/)
 - [STAR Run Log Browser](https://online.star.bnl.gov/RunLog/)
 - [Check HPSS request status](https://www.star.bnl.gov/devcgi/display_accnt.cgi)
 - [HPSS archiving tools](https://www.sdcc.bnl.gov/information/services/hpss-archiving-tools)
