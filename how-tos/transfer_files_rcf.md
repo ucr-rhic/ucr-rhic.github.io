@@ -76,6 +76,26 @@ Stands for Secure Copy.  It works exactly like `cp` command in Linux, and even u
 	- *Source File* is the file you want to copy to your local machine
 	- *Destination File Name* is the destination on your local machine to copy to.  Here you can use tab completion and even *~* shortcut.  The default will preserve the file name but you can optionally give the copied file a new name.
 	
+	
+### Mount the remote file system (Windows)
+How to mount the SDCC file system in Windows [Useful Ref](https://adamtheautomator.com/sshfs-mount/#Using_SSHFS_Mount_on_Windows)
+
+All commands should be executed in powershell terminal window
+
+1. Download and install [WinFsp](https://github.com/winfsp/winfsp/) using `winget install WinFsp.Fsp`
+2. Download and install [SSHFS-Win](https://github.com/winfsp/sshfs-win) using `winget install SSHFS-Win.SSHFS-Win`
+3. Go to the *bin* folder in the install folder for SSHFS-Win; this is because you will be using the installed command line tool `sshfs-win.exe`
+4. Ensure that your private key is exists and has this specific name *~/.ssh/id_rsa*
+5. `.\sshfs-win.exe svc \sshfs.k\username@sftp.sdcc.bnl.gov X:`
+	- *username* is your SDCC user name
+	- *X:* is the drive letter you want to mount the remote file system to
+6. Enter your password for the private key
+
+If everything worked you should see a message "The service sshfs has been started". This means the sshfs service has started and you should see the remote file system in Windows explorer. To disconnect just *CTRL-c* to stop the service or close the controlling terminal.
+
+There is a way to use a custom identity file and is described in the SSHFS-Win documentation. This has not been tried as of March 22, 2023.
+
+
 Most Windows versions using PuTTY
 ----------------------------------
 **This assumes you have downloaded all PuTTY tools from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/)**
