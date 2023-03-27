@@ -80,20 +80,41 @@ Stands for Secure Copy.  It works exactly like `cp` command in Linux, and even u
 ### Mount the remote file system (Windows)
 How to mount the SDCC file system in Windows [Useful Ref](https://adamtheautomator.com/sshfs-mount/#Using_SSHFS_Mount_on_Windows)
 
+
 All commands should be executed in powershell terminal window
 
 1. Download and install [WinFsp](https://github.com/winfsp/winfsp/) using `winget install WinFsp.Fsp`
 2. Download and install [SSHFS-Win](https://github.com/winfsp/sshfs-win) using `winget install SSHFS-Win.SSHFS-Win`
-3. Go to the *bin* folder in the install folder for SSHFS-Win; this is because you will be using the installed command line tool `sshfs-win.exe`
-4. Ensure that your private key is exists and has this specific name *~/.ssh/id_rsa*
-5. `.\sshfs-win.exe svc \sshfs.k\username@sftp.sdcc.bnl.gov X:`
+3. Open a Powershell (or command prompt if you prefer) and go to the *bin* folder in the install folder for SSHFS-Win; this is because you will be using the installed command line tool `sshfs-win.exe`
+4. Ensure that your private key exists in this particular location and has this specific name *~/.ssh/id_rsa*
+5. `.\sshfs-win.exe svc \sshfs.kr\username@sftp.sdcc.bnl.gov X:`
 	- *username* is your SDCC user name
 	- *X:* is the drive letter you want to mount the remote file system to
+	- This will mount the root directory i.e. The whole SDCC file system.
+		+ This is preferred since it will allow you to access files on other disks like the pwg disk and your symlink will also work
+		+ To mount just your home directory do `.\sshfs-win.exe svc \sshfs.k\username@sftp.sdcc.bnl.gov X:`
 6. Enter your password for the private key
 
 If everything worked you should see a message "The service sshfs has been started". This means the sshfs service has started and you should see the remote file system in Windows explorer. To disconnect just *CTRL-c* to stop the service or close the controlling terminal.
 
-There is a way to use a custom identity file and is described in the SSHFS-Win documentation. This has not been tried as of March 22, 2023.
+If you want to start a separate controlling terminal using powershell you can use the command `Start-Process` instead. This command will look like `Start-Process "C:\Path\To\SSHFS-Win\bin\sshfs-win.exe` -ArgumentList "svc","\sshfs.kr\sftp.sdcc.bnl.gov","X:"`.
+
+You can also add all the options for the sftp connection like hostname and identity file to your [ssh config](ssh-config.md) file to bypass having to type in all the information on the command line. For example if the "Host" in you ssh config file is "sdccsftp" then you can do the following command to connect `.\sshfs-win.exe svc \sshfs.kr\sdccsftp X:`
+
+### SSHFS on a Mac OS
+[Useful Ref](https://www.petergirnus.com/blog/how-to-use-sshfs-on-macos)
+
+1. Download and install [OSXFuse](https://osxfuse.github.io/) a file system integration for MAC needed to create a mountable drive
+2. Download and install [SSHFS](https://osxfuse.github.io/) the actual executable needed for the sshfs command
+3. Go to home directory `cd ~`
+4. Create a temporary directory `mkdir tmp`
+5. Ensure that your private key is loaded into the [ssh-agent](ssh_agent.md)
+6. `sshfs username@sftp.sdcc.bnl.gov:/path/to/dir ~/tmp`
+    - To bind the root directory "/" of the entire SDCC file system you can just omit the "/path/to/dir" and just leave a "/".
+7. Unmount with `diskutil umount ~/tmp`
+
+Note that symlinks or soft links don't work if the symlink starts with a "/" since your computer will think the "/" refers to your root directory and not the mounted file systems root directory. You will have to explicitly give it the correct path. Again this will only work if you mount the root directory.
+
 
 
 Most Windows versions using PuTTY
