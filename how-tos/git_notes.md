@@ -123,24 +123,14 @@ Starting with a cloned fork with both *origin* and *upstream* set to correct loc
 
 When finished making updates and want to create a pull request
 
-1. `git checkout main` to switch back to main branch  
-2. `git merge [branchname]` merges updates from *branchname* into *main* and creates a new merge commit if needed  
-3. `git push origin main` push changes to Github server  
-4. Open pull request on Github merging the main branches  
-5. Do not sync your main branch with the upstream until your pull request is approved  
-   + You can keep adding commits and pushing to your fork to the main branch as you receive comments. These changes once pushed will update the pull request files automatically  
-6. After pull request sync your local copy with upstream  
-	1. Push changes to your Github fork
- 	 + If your github fork shows some number of commits ahead of the original this is not because you have more commits but because the pointer for the history is in the wrong place to fix it you can do the following in your local copy [Ref1](https://github.com/orgs/community/discussions/22440), [Ref2](https://stackoverflow.com/questions/72477056/git-fork-always-commits-ahead-i-dont-want/72480346).
- 	  1. `git checkout main` to switch to main branch
- 	  2. Ensure directory has no files that need to be committed (i.e. working tree is clean)
- 	  3. `git fetch upstream` to make sure you have latest updates
-     (To keep commits)
-     4. git merge upstream/main
-     (To discard commits)
- 	  4. `git reset --hard upstream/main` to force git to move to latest commit from upstream/main. In this instance option *hard* is ok since you want git to force the commit pointer to move to the latest commit on the upstream/main branch and not your fork's branch. The approval of the pull request will have integrated your changes into the history of the upstream already.
- 	   - *Note that you don't want to do a `git merge` like above because you are not fast forwarding*
- 	  5. `git push origin main` to push changes to forked repository. Option *hard* may need to be used
+1. `git push origin branchname` push changes to your Github fork
+2. Open pull request on Github merging the branchname in your fork with the STAR main branch
+   + You can keep adding commits and pushing to your fork to the branchname that you created the pull request for as you receive comments. These changes once pushed will update the pull request files automatically.
+3. Once the pull request is removed switch back to the main branch `git checkout main`
+4. Get upstream changes `git fetch upstream/main` and update local copy of "main" which should have your pull request
+5. Fast forward local copy to upstream copy `git merge upstream/main`
+6. Push updates of main to your fork `git push origin/main`
+7. If you want you can remove branchname now but you may want to keep it if you want to maintain the history of the commits since the pull request will be a single commit to the main branch of the STAR repository.
 
 <a name = "GitIgnore"></a>
 ### Ignoring files in local directory
