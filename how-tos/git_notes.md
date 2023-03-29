@@ -187,11 +187,3 @@ The steps for setting up ssh on Github are similar to setting up ssh for BNL SDC
    - If no remote has been set as shown by `git remote -v` then you add it by doing `git remote add origin [ssh_url]`  
    - If a remote has been set and you want to change it use `git remote set-url origin [ssh_url]`  
 
-
-@[February 22, 2023]>https://stackoverflow.com/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github
-
-
-https://www.earthdatascience.org/courses/intro-to-earth-data-science/git-github/github-collaboration/update-github-repositories-with-changes-by-others/
-
-https://ljvmiranda921.github.io/notebook/2021/11/12/sync-your-fork/
-
