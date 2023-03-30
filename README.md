@@ -8,9 +8,9 @@ Current Group Members
 - [Kenneth Barish](https://profiles.ucr.edu/app/home/profile/barish)
 - [Latiful Kabir](https://profiles.ucr.edu/app/home/profile/mdlatifk)
 - [David Kapukchyan](https://profiles.ucr.edu/app/home/profile/dkapu001)
-- [William Baker](https://profiles.ucr.edu/app/home/profile/wbake004)
 - [Xilin Liang](https://profiles.ucr.edu/app/home/profile/xlian046)
 - [Ananya Paul](https://profiles.ucr.edu/app/home/profile/apaul029)
+- [Borna Maghoul (Kumar)]
 
 **Heavy Ion**
 - [Richard Seto](https://profiles.ucr.edu/app/home/profile/seto)
