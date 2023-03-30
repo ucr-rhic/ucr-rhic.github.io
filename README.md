@@ -127,6 +127,7 @@ STAR How-Tos
 	+ [How to use ssh config file](how-tos/ssh_config.md)
 	+ [How to transfer files into and out of RCF](how-tos/transfer_files_rcf.md)
 - [Notes on using Condor and Linux](how-tos/condor_notes.md)
+- [Notes on working with git and pull requests to merge your code with STAR github repository](how-tos/git_notes.md)
 - [NoMachine ssh/rterm hang on exit](how-tos/ssh_hang_on_exit.md)
 
 Learn About STAR Detectors
@@ -186,7 +187,7 @@ Resources
 - [Shift Sign-Up Page](https://online.star.bnl.gov/ShiftSignup/)
 	+ [Login Info](https://drupal.star.bnl.gov/STAR/comp/sofi/web-access)
 - [STAR RunLog Browser](https://online.star.bnl.gov/RunLog/)	
-- [Disk Usage Status](https://network.racf.bnl.gov/Facility/GCE/GPFS/)
+- [Disk Usage Status](https://monitoring.sdcc.bnl.gov/Facility/GCE/GPFS/)
 - [STAR Run Log Browser](https://online.star.bnl.gov/RunLog/)
 - [Check HPSS request status](https://www.star.bnl.gov/devcgi/display_accnt.cgi)
 - [HPSS archiving tools](https://www.sdcc.bnl.gov/information/services/hpss-archiving-tools)
