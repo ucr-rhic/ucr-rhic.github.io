@@ -10,7 +10,7 @@ Current Group Members
 - [David Kapukchyan](https://profiles.ucr.edu/app/home/profile/dkapu001)
 - [Xilin Liang](https://profiles.ucr.edu/app/home/profile/xlian046)
 - [Ananya Paul](https://profiles.ucr.edu/app/home/profile/apaul029)
-- [Borna Maghoul (Kumar)]
+- Borna Maghoul (Kumar)
 
 **Heavy Ion**
 - [Richard Seto](https://profiles.ucr.edu/app/home/profile/seto)
