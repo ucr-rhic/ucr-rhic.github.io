@@ -132,3 +132,17 @@ Using PuTTY tools to transfer files works the same way except the name of the ex
 	- __sftp__: Use command `psftp.exe` and use just like *sftp* as described [here](#SftpLinux)
 	- ~~__scp__: Use command `pscp.exe` and use just like *scp* as described [here](#ScpLinux)~~
 
+## Usage of SSHFS with Visual Studio on Windows
+--------------------
+If you are looking to use Visual Studio as file editor and display if you want to avoid using XMing or one of it's alternatives, this is a viable option. In theory, this tutorial should work with Windows, Mac, and Linux with some minor changes, but I will focus on Windows specifically. Please follow these steps:
+
+1. Follow steps 1-2 [here](https://github.com/privdonut123/ucr-rhic.github.io/edit/master/how-tos/transfer_files_rcf.md#mount-the-remote-file-system-windows).
+2. Download and install one of the [Visual Studio Distributions](https://visualstudio.microsoft.com/). I would recommend that you get Visual Studio Code since is available for Windows, Mac, and Linux. Pick whichever you prefer that suits your operating system.
+3. Open Visual Studio and get any extensions you might want. These are useful, especially if you plan on running code locally (**Disclaimer**; These are not all compilers or debuggers, and in many cases, you need to install a separate compiler. If you want to use many of these extensions properly, follow all of their directions). My recommendations are the [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack), [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter), [Powershell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) (if you have it), and [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+4. Follow steps 3-6 [here](https://github.com/privdonut123/ucr-rhic.github.io/edit/master/how-tos/transfer_files_rcf.md#mount-the-remote-file-system-windows).
+5. Once the drive is mounted, you can either navigate it and open files using:
+	- Your operating system's file explorer.
+	- The built-in file explorer in Visual Studio (you can get to this by using `Ctrl+Shift+E` (most convenient).
+	- In powershell you can navigate to the file you would like to edit and type `code file_name`. This will open the desired file in Visual Studio.
+
+Make sure to save any edited files, doing so will save those changes on SDCC as well. Also keep in mind, if you want to run your code, you will still need to `ssh` into SDCC since the STAR libraries are not local. Use your preferred method of login from [here](https://ucr-rhic.github.io/how-tos/rcf_generic_login.html).
