@@ -92,6 +92,9 @@ All commands should be executed in powershell terminal window
 	- *X:* is the drive letter you want to mount the remote file system to
 	- This will mount the root directory i.e. The whole SDCC file system.
 		+ This is preferred since it will allow you to access files on other disks like the pwg disk and your symlink will also work
+		+ Mounting the whole disk may take awhile to navigate. To just mount a particular directory on the disk, specify the directory
+			+ For example, if I want to mount the /pwg disk, try `.\sshfs-win.exe svc \sshfs.kr\username@sftp.sdcc.bnl.gov/direct/gpfs01/star/pwg/ X:` 
+		+ Keep in mind, mounting symlinks doesn't work well, so make sure that whenever you mount to you specify the direct path to whatever you like. If you are having trouble mounting the directory, try adding the the `/direct/` prefix to the directory.	
 		+ To mount just your home directory do `.\sshfs-win.exe svc \sshfs.k\username@sftp.sdcc.bnl.gov X:`
 6. Enter your password for the private key
 
