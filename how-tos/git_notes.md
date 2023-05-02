@@ -155,14 +155,17 @@ If a file shows up on `git status` after adding it to the ".gitignore" it could 
 ### Sparse Checkout
 Sparse checkout can be used to exclude files to download from a repository.
 
-2. `git clone --no-checkout [url]`  
-2. `git config core.sparseCheckout true`  
-3. `cd .git` go to hidden git folder in the working tree  
-4. `cd info` go the *info* folder  
-5. Create or modify file named *sparse-checkout* with files to download  
-   - Supports linux wildcard expansions
-   - Use `!` preceding a file name to exclude it
-   
+1. `git clone --no-checkout [url]`  
+2. Go to created directory
+3. `git config core.sparseCheckout true`  
+4. `cd .git` go to hidden git folder in the working tree  
+5. `cd info` go the *info* folder  
+6. Create or modify file named *sparse-checkout* with files to download  
+   - Supports linux wildcard expansions  
+   - Use `!` preceding a file name to exclude it  
+7. After setting up sparse checkout file run `git checkout` to grab the files  
+   - Any additional changes to *sparse-checkout* will require a `git checkout`  
+ 
 Example: Want to check out only StSpinDbMaker and all files that start with "StFcs" in StRoot
 > /\*  
 > !/\*/  
@@ -187,3 +190,20 @@ The steps for setting up ssh on Github are similar to setting up ssh for BNL SDC
    - If no remote has been set as shown by `git remote -v` then you add it by doing `git remote add origin [ssh_url]`  
    - If a remote has been set and you want to change it use `git remote set-url origin [ssh_url]`  
 
+
+## History mismatch between fork and upstream
+
+If your github fork shows some number of commits ahead of the original this is not because you have more commits but because the pointer for the history is in the wrong place to fix it you can do the following in your local copy [Ref1](https://github.com/orgs/community/discussions/22440), [Ref2](https://stackoverflow.com/questions/72477056/git-fork-always-commits-ahead-i-dont-want/72480346).
+
+1\. `git checkout main` to switch to main branch  
+2\. Ensure directory has no files that need to be committed (i.e. working tree is clean)  
+3\. `git fetch upstream` to make sure you have latest updates  
+
+4\. __To keep the commits you made on your fork:__ `git merge upstream/main`  
+   - *Note that discarding the commits doesn't discard the changes*  
+
+4\. __To discard commits you made on your fork:__ `git reset --hard upstream/main` to force git to move to latest commit from upstream/main. In this instance option *hard* is ok since you want git to force the commit pointer to move to the latest commit on the upstream/main branch and not your fork's branch. The approval of the pull request will have integrated your changes into the history of the upstream already.  
+   - *Note that you don't want to do a `git merge` like above because you are not fast forwarding*  
+
+5\. `git push origin main` to push changes to forked repository. Option *hard* may need to be use  
+  
