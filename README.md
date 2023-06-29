@@ -7,10 +7,12 @@ Current Group Members
 **Spin Physics**
 - [Kenneth Barish](https://profiles.ucr.edu/app/home/profile/barish)
 - [Latiful Kabir](https://profiles.ucr.edu/app/home/profile/mdlatifk)
+- [Bishnu Karki](https://profiles.ucr.edu/app/home/profile/bishnuk)
+- [Weibin Zhang](https://profiles.ucr.edu/app/home/profile/weibinz)
 - [David Kapukchyan](https://profiles.ucr.edu/app/home/profile/dkapu001)
 - [Xilin Liang](https://profiles.ucr.edu/app/home/profile/xlian046)
 - [Ananya Paul](https://profiles.ucr.edu/app/home/profile/apaul029)
-- Borna Maghoul (Kumar)
+- [Borna Maghoul (Kumar)](https://profiles.ucr.edu/app/home/profile/bmagh001)
 
 **Heavy Ion**
 - [Richard Seto](https://profiles.ucr.edu/app/home/profile/seto)
@@ -19,7 +21,7 @@ Current Group Members
 - [Ding Chen](https://profiles.ucr.edu/app/home/profile/dchen087)
 - [Cameron Racz](https://profiles.ucr.edu/app/home/profile/cracz001)
 - [Erik Loyd](https://profiles.ucr.edu/app/home/profile/eloyd001)
-
+- [Michael Gordon](https://profiles.ucr.edu/app/home/profile/mgord006)
 
 Weekly Group Meeting
 -------------------------
@@ -188,7 +190,6 @@ Resources
 	+ [Login Info](https://drupal.star.bnl.gov/STAR/comp/sofi/web-access)
 - [STAR RunLog Browser](https://online.star.bnl.gov/RunLog/)	
 - [Disk Usage Status](https://monitoring.sdcc.bnl.gov/Facility/GCE/GPFS/)
-- [STAR Run Log Browser](https://online.star.bnl.gov/RunLog/)
 - [Check HPSS request status](https://www.star.bnl.gov/devcgi/display_accnt.cgi)
 - [HPSS archiving tools](https://www.sdcc.bnl.gov/information/services/hpss-archiving-tools)
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
@@ -199,7 +200,3 @@ Student Custom Pages
 --------------------
 - [David Kapukchyan General Website](https://www.star.bnl.gov/protected/spin/dkapstar/)
 	+ [FPS FPOST Good Run List](https://www.star.bnl.gov/protected/spin/dkapstar/Run17_RunList/)
-
-
-
-
