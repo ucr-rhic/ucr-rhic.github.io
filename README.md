@@ -131,7 +131,7 @@ STAR How-Tos
 - [Notes on using Condor and Linux](how-tos/condor_notes.md)
 - [Notes on working with git and pull requests to merge your code with STAR github repository](how-tos/git_notes.md)
 - [NoMachine ssh/rterm hang on exit](how-tos/ssh_hang_on_exit.md)
-- [How to set up ROOT6 on RCF]([how-tos/ssh_hang_on_exit.md](https://drupal.star.bnl.gov/STAR/system/files/smirnov_star_collaboration_meeging_2022.pdf)
+- [How to set up ROOT6 on RCF](https://drupal.star.bnl.gov/STAR/system/files/smirnov_star_collaboration_meeging_2022.pdf)
 
 
 Learn About STAR Detectors
