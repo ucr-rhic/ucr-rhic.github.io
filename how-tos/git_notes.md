@@ -143,13 +143,13 @@ If a file shows up on `git status` after adding it to the ".gitignore" it could 
    - **NOTE: Without the "--cached" the file will be deleted permanently**  
 
 #### Example *.gitignore*
-#You can use "#" for comments in a gitignore file
-> myfile.txt                 #ignore all files named "myfile.txt"
-> \*.so                      #ignore files ending in ".so" (i.e. shared libraries)
-> \*.exe                     #ignore files ending in ".exe" (i.e. executables)
-> ignorethis/                #ignore all files and folders in the directory "ignorethis"
-> !ignorethis/important.txt  #don't ignore file "important.txt" in directory "ignorethis/"
-> \*\*/ignoreall/            #ignore all directories matching name "ignoreall"
+> #You can use "#" for comments in a gitignore file  
+> myfile.txt                 #ignore all files named "myfile.txt"  
+> \*.so                      #ignore files ending in ".so" (i.e. shared libraries)  
+> \*.exe                     #ignore files ending in ".exe" (i.e. executables)  
+> ignorethis/                #ignore all files and folders in the directory "ignorethis"  
+> !ignorethis/important.txt  #don't ignore file "important.txt" in directory "ignorethis/"  
+> \*\*/ignoreall/            #ignore all directories matching name "ignoreall"  
 
 <a name = "SparseCheckout"></a>
 ### Sparse Checkout
@@ -167,12 +167,6 @@ Sparse checkout can be used to exclude files to download from a repository.
    - Any additional changes to *sparse-checkout* will require a `git checkout`  
  
 Example: Want to check out only StSpinDbMaker and all files that start with "StFcs" in StRoot
-> /\*  
-> !/\*/  
-> /StRoot/  
-> !/StRoot/\*/  
-> StRoot/StSpinPool/  
-> !/StRoot/StSpinPool/\*/  
 > StRoot/StSpinPool/StSpinDbMaker/  
 > StRoot/StFcs\*  
 
@@ -181,7 +175,9 @@ Note that you first need to tell it grab everything in a folder first before you
 ## Setting up ssh for Github
 The steps for setting up ssh on Github are similar to setting up ssh for BNL SDCC rcas machines. You need to generate a ssh public and private key pair. Then upload the public key hash to Github. The main difference is that there is nowhere to log in. You just need to ensure the private key is loaded into your ssh agent when you call git fetch/pull.
 
-1. [Generate ssh key pair](generate_keys.md). You can reuse ssh key pairs but it is not recommended)  
+Note that a ssh key is linked to your account not a specific repository. So the same public-private key pair can work on many repositories associated with your account.
+
+1. [Generate ssh key pair](generate_keys.md). You can reuse ssh key pairs but it is not recommended.  
 2. Copy public key hash as discussed [here](generate_keys.md)  
 3. Go to Github website and navigate to ssh settings  
 4. Copy public key hash into the appropriate box and give a name for the key  
