@@ -13,6 +13,7 @@ Current Group Members
 - [Xilin Liang](https://profiles.ucr.edu/app/home/profile/xlian046)
 - [Ananya Paul](https://profiles.ucr.edu/app/home/profile/apaul029)
 - [Borna Maghoul (Kumar)](https://profiles.ucr.edu/app/home/profile/bmagh001)
+- [Sean Preins](https://profiles.ucr.edu/app/home/profile/sprei001)
 
 **Heavy Ion**
 - [Richard Seto](https://profiles.ucr.edu/app/home/profile/seto)
