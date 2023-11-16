@@ -7,3 +7,6 @@ UCR Heavy Ion and Spin Group in the News
 - National Nuclear Physics Summer School 2023 (NNPSS)
     + [DNP Newsletter No. 2017 August 2023](https://info.aps.org/l/640833/2023-10-02/2q8y3l/640833/1696276607cV7HDIEI/dnp_NewsLett_217_4.pdf)
     + [UCR story July 11, 2023](https://insideucr.ucr.edu/stories/2023/07/11/summer-school-focuses-nuclear-physics)
+
+- [Xilin Liang wins merit award at national lab](https://insideucr.ucr.edu/awards/2023/11/15/physics-graduate-student-wins-merit-award-national-lab)
+
