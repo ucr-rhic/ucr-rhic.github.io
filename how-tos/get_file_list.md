@@ -53,5 +53,5 @@ get_file_list.pl -keys 'path,filename' -cond 'production=P11id,filetype=daq_reco
 - This shows various MuDst files relevant to your request
 - Create a directory in your local system or your pwg disk where you want the MuDst files
 - Requests for getting files from hpss are submitted by using the 'hpss_user.pl' command. Use the -h option to look at the different options.
-- Submit a request for getting a particular MuDst file by doing 'hpss_user.pl "HPSSFilePath/" "TargetFilePath/" '
+- Submit a request for getting a particular MuDst file by doing 'hpss_user.pl HPSSFilePath/ TargetFilePath/ '
 - Request Status can be viewed [here](https://www.star.bnl.gov/devcgi/display_accnt.cgi) for the relevant username. Files will be made available to the TargetFilePath/
