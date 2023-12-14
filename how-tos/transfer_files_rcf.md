@@ -10,7 +10,7 @@ There are two relevant commands *sftp* and *scp*  I will go through both of thes
 Summary Linux Flavors
 -----------------------
 __*IMPORTANT:Either make sure ssh-agent has key loaded or use option '-i' to give private key explicitly*__
-- Download: `sftp "username@sftp.sdcc.bnl.gov:/rcf/path/to/file /local/path/to/copy/to/`
+- Download: `sftp "username@sftp.sdcc.bnl.gov:/remote/path/to/file /local/path/to/copy/to/`
 - Upload: `echo "put <Source File>" | sftp <username>@sftp.sdcc.bnl.gov:<Full Path>/`
 - *Interactive session*: `sftp username@sftp.sdcc.bnl.gov`
 
