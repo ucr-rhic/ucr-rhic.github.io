@@ -110,4 +110,71 @@ This assumes you have followed the steps above to create and export your own cer
 Here I will briefly describe where your Powershell profile needs to go.  In Linux, this is done through a file in the home folder called either *.bashrc*, *.bash_profile* for bash shells or *.cshrc* for c-shell.  In Powershell the profile folder is in *%USERPROFILE%\WindowsPowershell* for Powershell 5 and *%USERPROFILE%\PowerShell* for Powershell 7.  The script name is *Microsoft.PowerShell_profile.ps1*.  You need to sign this Powershell script as described above if you want to keep the execution policy to *AllSigned*.
 I will not go into details on how to write Powershell scripts since examples of Powershell codes can be found in many places.  I will only mention a few important things.  The first is how to customize the prompt.  This has to be done through a special function called *prompt*, rather than an environment variable like in \*NIX systems (*$PS1*).  The other thing is aliases.  Aliases in Powershell must match exactly one executable and cannot have extra options as part of the alias.  To make an "alias" that has extra options you must write a function.
 
+##### Examples
+
+1. An example of a prompt function that displays the history number, the date, and the current directory with some coloring options
+
+```powershell
+#The prompt function determines how to display the command prompt
+#"PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) ";
+# .Link
+# https://go.microsoft.com/fwlink/?LinkID=225750
+# .ExternalHelp System.Management.Automation.dll-help.xml
+function prompt
+{
+  $identity = [Security.Principal.WindowsIdentity]::GetCurrent()
+  $principal = [Security.Principal.WindowsPrincipal] $identity
+  $adminRole = [Security.Principal.WindowsBuiltInRole]::Administrator
+  $printdate = Get-Date -Format "ddd MMM dd HH:mm"     #Date to print for format see:https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings?view=netframework-4.8
+  #For color prompts see: https://superuser.com/questions/1259900/how-to-colorize-the-powershell-prompt
+  #Basically works just like bash where you need escape character below plus color code found here: https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences#span-idtextformattingspanspan-idtextformattingspanspan-idtextformattingspantext-formatting
+  $ESC = [char]27
+  $colordate = "$ESC[01;35m["+ $printdate +"]$ESC[00m"
+  
+   $historylevel = @(Get-History).Count
+   $historylevel = $historylevel + 1  #This is so the history 'Id' match
+
+  #Having a custom prompt command will prevent the conda environment from being shown on the "prompt" the solution for this is given here where you use the '$ENV:CONDA_PROMPT_MODIFIER' variable to recover it [ref Aug. 15, 2021](https://gitmemory.com/issue/conda/conda/10860/899136290)
+  #Also in the same link is a command for how to output only current directory
+  $(if (Test-Path variable:/PSDebugContext) { '[DBG]: ' }
+    elseif($principal.IsInRole($adminRole)) { "[ADMIN]: " }
+    else { '' }
+    ) +
+	"$ENV:CONDA_PROMPT_MODIFIER" +
+	"$ESC[0;32mPS"+$PSVersionTable.PSVersion.Major + 
+	"(" + $historylevel + ")$ESC[00m " +
+	$colordate + " " + 
+	#"$ESC[01;32m$Env:USERNAME@$Env:COMPUTERNAME$ESC[00m" + ':' + 
+	"$ESC[0;34m"+$(Split-Path -leaf -path (Get-Location)) + "$ESC[00m" +
+    $(if ($NestedPromptLevel -ge 1) { '>>' }) + '> '
+}
+```
+
+2. Bash like tab completion [Src](https://stackoverflow.com/questions/8264655/how-to-make-powershell-tab-completion-work-like-bash): `Set-PSReadlineKeyHandler -Key Tab -Function Complete`
+
+
+3. Alias for explorer.exe for opening files and directories (Use Shell.Application COM in future?), [Src](https://dev.to/ofhouse/add-a-bash-like-autocomplete-to-your-powershell-4257): `New-Alias -Name open -Value 'Invoke-Item'`
+
+4. Function to directly log into rcas node. No arguments means least occupied node, single argument to indicate node number; e.g. `star_login 6010`.
+
+```powershell
+function star_login
+{
+	[CmdletBinding(SupportsShouldProcess=$true)]
+	param
+	(
+		[parameter(Mandatory=$false)]
+		[String]$ServerNode
+	)
+	process
+	{
+		#Source for checking valid parameter:https://stackoverflow.com/questions/48643250/how-to-check-if-a-powershell-optional-argument-was-set-by-caller
+		if( !($PSBoundParameters.ContainsKey('ServerNode')) ){ $ServerNode = "rterm -i" }
+		#STAR nodes are on 60XX where X is some digit (Help on Regex:https://powershell.org/forums/topic/regex-on-if-statement/)
+		elseif( $ServerNode -match "60\d{2}" ){ $ServerNode = "ssh rcas${ServerNode}" }
+		else{ echo "Invalid input"; return; }
+		ssh user@ssh.sdcc.bnl.gov -At $ServerNode; #Here user would be your username and assumes you have the proper key loaded
+	}
+}
+```
 
