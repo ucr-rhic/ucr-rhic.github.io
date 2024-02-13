@@ -24,7 +24,7 @@ Simply type `hsi` in SDCC rcas nodes to enter into interactive session
 Like Linux `tar` command but with some important differences. `htar` will automatically create a compressed file and archive that. It creates an index file that will allow you to see the files without grabbing them off HPSS. This means if you use `hsi` to browse your files you will see two actual files: one for the index, and the other is the data. You must always supply an "Action" flag. These can be found in the links above. The examples below highlight the most useful ones.
 
 #### Examples:
-1. `htar -c -f /path/to/files/*.root` compresses and archives all root files in `/path/to/files`  
+1. `htar -c -f hpssfilename /path/to/files/*.root` compresses and archives all root files in `/path/to/files`  
     - __NB:__ Overwrite is automatic and doesn't prompt
 2. `htar -x -f path/to/hpss/filename` extracts the files in *filename*  
     - __NB:__ If file being extracted exists overwrites without prompting  
