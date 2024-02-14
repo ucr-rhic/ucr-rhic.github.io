@@ -26,6 +26,7 @@ Like Linux `tar` command but with some important differences. `htar` will automa
 #### Examples:
 1. `htar -c -f hpssfilename /path/to/files/*.root` compresses and archives all root files in `/path/to/files`  
     - __NB:__ Overwrite is automatic and doesn't prompt
+    - __NB:__ Preserves directory structure; i.e. if command above is executed, then the restored file(s) will get restored to `<cwd>/path/to/files/file.root`. However if `htar -c -f hpssfilename *.root` is executed then the files will get restored to `<cwd>/file.root`.  
 2. `htar -x -f path/to/hpss/filename` extracts the files in *filename*  
     - __NB:__ If file being extracted exists overwrites without prompting  
 3. `htar -t -f path/to/hpss/filename` shows the files in *filename*
