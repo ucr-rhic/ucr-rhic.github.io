@@ -4,6 +4,9 @@ Notes on using HTCondor
 Ref: @[December 14, 2022] > [Condor Manual](https://htcondor.readthedocs.io/en/latest/index.html)  
 Ref: @[December 14, 2022] > [Condor SDCC](https://www.sdcc.bnl.gov/information/services/htcondor-sdcc)  
 Ref: @[December 14, 2022] > [Condor Quick Start SDCC](https://www.sdcc.bnl.gov/information/htcondor-quick-start-guide)  
+Ref: @[February 10, 2025] > [Useful how to for some basic condor commands](https://chtc.cs.wisc.edu/uw-research-computing/condor_q)
+Ref: @[February 11, 2025] > [Managing condor jobs](https://htcondor.readthedocs.io/en/latest/users-manual/managing-a-job.html)
+Ref: @[February 11, 2025] > [All condor commands](https://htcondor.readthedocs.io/en/latest/man-pages/index.html)
 
 High-Throughtput Computing (HTC) is an important part of data analysis. The idea is that computer nodes (servers) are reserved to run commands/executables. This allows to process the same command/executable multiple times to generate some output. For instance if you want to simulate 10000 particles a single computer/node executing that many particles will take a long time. If instead you were to simulate 100 particles on 1000 machines you will still get 10000 particles but in the time it takes to process only 100 particles so you save time. All you need to do now is combine the results which is often much less time consuming than simulating 10000 particles on a single computer. However, the node needs to know what executable you are running, what input files are needed and where to send the output. This is where HTCondor comes in.
 
@@ -15,6 +18,11 @@ The software group at BNL maintains condor and the nodes used to do analysis. Th
 ## Useful condor commands
 
  - `condor_q` query the condor system for any running jobs
+   + `condor_q -long` long output of a job or jobs
+   + `condor_q -run` show only running jobs
+   + `condor_q -better-analyze` show more job details like why it is idle or on hold
+   + `condor_q -hold` show hold reasons for a job (when given a jobid as argument) or all jobs
+     + `condor_q -hold -af HoldReason` if hold reason is cut-off
  - `condor_submit jobfile` process *jobfile* to send to condor nodes
  - `condor_tail jobid` look at stdout of a running *jobid*
  - `condor_ssh_to_job jobid` ssh to condor node running *jobid*
