@@ -134,6 +134,7 @@ STAR How-Tos
 - [Notes on working with git and pull requests to merge your code with STAR github repository](how-tos/git_notes.md)
 - [NoMachine ssh/rterm hang on exit](how-tos/ssh_hang_on_exit.md)
 - [How to set up ROOT6 on RCF](https://drupal.star.bnl.gov/STAR/system/files/smirnov_star_collaboration_meeging_2022.pdf)
+- [How to set up and use Alma 9 nodes for STAR](how-tos/star_alma9.md)
 
 
 Learn About STAR Detectors

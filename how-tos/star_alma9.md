@@ -2,7 +2,9 @@ Notes on using Alma 9 nodes at STAR
 --------------------------------------
 
 Ref: @[July 14, 2025] > [STAR Software Mattermost chat with link to tutorial page](https://chat.sdcc.bnl.gov/star/pl/dqp94zse97r39jh8aetbi3jq7e)
+
 Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to issue with STAR_ROOT not found](https://chat.sdcc.bnl.gov/star/pl/9tog9swdafyo5jgxmyqop6ndoc)
+
 Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to fix issue with STAR_ROOT not found](https://chat.sdcc.bnl.gov/star/pl/3tw7krm3a7by8cakfw9jo7inca)
 
 **The information contained herein is valid as of the time of writing July 15, 2025 and may change as the STAR software develops**
@@ -14,12 +16,14 @@ Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to fix issue with ST
 	- For example to login to the gateway and Alma 9 node in one go do `ssh -t username@ssh.sdcc.bnl.gov ssh starsub04`
 		- This assumes you have your ssh private key loaded into the agent [see](ssh_agent.md).
 - Alma 9 can only use NFS formatted disks
-	- To setup NFS disks do the following to __both__ your *.cshrc* and *.login* scripts.
-		1. Replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
-		2. One line above where you just did the replacement in __both__ files add `setenv USE_NFS4  1`
+	- To setup NFS disks do the following:
+		1. In your *.cshrc* login script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
+		2. One line above where you just did the replacement in the *.cshrc* file add `setenv USE_NFS4 1`
+		3. If you have a *.login* script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
 - STAR software doesn't run on Alma 9 and must use the container `singularity`
-	- Setup environment 
+	- To use `singularity` first setup NFS environment following instructions above
 	- To run STAR code interactively on an Alma 9 node do `singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif csh`
+		- This will start the `singularity` environment for STAR and you can now run your STAR scripts normally
 - Condor jobs must also be handled differently to use the container
 	- For STAR scheduler
 		1. add to your xml  `<shell>singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif</shell>`
