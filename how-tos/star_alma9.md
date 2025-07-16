@@ -20,6 +20,7 @@ Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to fix issue with ST
 		1. In your *.cshrc* login script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
 		2. One line above where you just did the replacement in the *.cshrc* file add `setenv USE_NFS4 1`
 		3. If you have a *.login* script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
+  		4. Following those changes, you must then add the following to you login script. Add the lines `setup 64b` followed by `setup ROOT 6.20.08`. I believe this number may change as the versions of root6 change. 
 - STAR software doesn't run on Alma 9 and must use the container `singularity`
 	- To use `singularity` first setup NFS environment following instructions above
 	- To run STAR code interactively on an Alma 9 node do `singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif csh`
