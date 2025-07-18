@@ -16,7 +16,7 @@ Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to fix issue with ST
 	- For example to login to the gateway and Alma 9 node in one go do `ssh -t username@ssh.sdcc.bnl.gov ssh starsub04`
 		- This assumes you have your ssh private key loaded into the agent [see](ssh_agent.md).
 - Alma 9 can only use NFS formatted disks
-	- To setup NFS disks do the following:
+	- To setup NFS disks do the following (note that the first three of these thing have to actually be done in your .login or .cshrc scripts. you cannot do this later. You can set up root later, I believe):
 		1. In your *.cshrc* login script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
 		2. One line above where you just did the replacement in the *.cshrc* file add `setenv USE_NFS4 1`
 		3. If you have a *.login* script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
