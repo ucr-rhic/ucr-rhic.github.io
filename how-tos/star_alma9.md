@@ -40,6 +40,10 @@ The end of life for Scientific Linux 7 (SL7) has made it necessary and prudent f
 
 The Alma 9 nodes cannot be reached with the usual `rterm -i` command. You need to ssh to them directly from the gateway. The nodes are *starsub0X* where "X" is a number from 1 to 7, e.g. `ssh starsub04`. The nodes numbered 3 and above have the latest version of condor and are thus recommended.
 
+## Q&A
+* Fatal in <TVirtualStreamerInfo::Factory>: Cannot find the plugin handler for TVirtualStreamerInfo! However $ROOTSYS/etc/plugins/TVirtualStreamerInfo is accessible, Check the content of this directory!
+	* This happens for older version of star libraries, use newer version (>= SL22c) to avoid this error. 
+
 
 
 
