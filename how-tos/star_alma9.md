@@ -25,6 +25,7 @@ Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to fix issue with ST
 	- To use `singularity` first setup NFS environment following instructions above
 	- To run STAR code interactively on an Alma 9 node do `singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif csh`
 		- This will start the `singularity` environment for STAR and you can now run your STAR scripts normally
+		- if you want to run jobs using condor in the singularity container, compile all code in the singularity container. This will use all the libraries available in the container. It also uses ROOT5.
 - Condor jobs must also be handled differently to use the container
 	- For STAR scheduler
 		1. add to your xml  `<shell>singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif</shell>`
