@@ -195,6 +195,10 @@ Resources
 	+ [Login Info](https://drupal.star.bnl.gov/STAR/comp/sofi/web-access)
 - [STAR RunLog Browser](https://online.star.bnl.gov/RunLog/)	
 - [Disk Usage Status](https://monitoring.sdcc.bnl.gov/Facility/GCE/GPFS/)
+  - There is a way to check your pwg disk quota interactively using the `mmlsquota`
+  - Best way is `mmlsquota --block-size auto -e gpfs01:star-pwg`
+  - Formatted Output using `awk`: `mmlsquota --block-size auto -e gpfs01:star-pwg | awk 'NR>2 {printf "Used: %s | Quota: %s | Limit: %s\n", $4,  $5, $6}'`
+    - The "-e" flag according to the documentation will pull the latest quota information not sure what the difference is but better to be safe
 - [Check HPSS request status](https://www.star.bnl.gov/devcgi/display_accnt.cgi)
 - [HPSS archiving tools](https://www.sdcc.bnl.gov/information/services/hpss-archiving-tools)
 - [Mattermost Chat Site](https://chat.sdcc.bnl.gov/login)
