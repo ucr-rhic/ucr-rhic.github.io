@@ -3,11 +3,13 @@ Notes on using Alma 9 nodes at STAR
 
 Ref: @[July 14, 2025] > [STAR Software Mattermost chat with link to tutorial page](https://chat.sdcc.bnl.gov/star/pl/dqp94zse97r39jh8aetbi3jq7e)
 
+Ref: @[July 14, 2025] > [Jerome Tutorial on running Alma 9](https://drupal.star.bnl.gov/STAR/blog/jeromel/Running-a9-nodes)
+
 Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to issue with STAR_ROOT not found](https://chat.sdcc.bnl.gov/star/pl/9tog9swdafyo5jgxmyqop6ndoc)
 
 Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to fix issue with STAR_ROOT not found](https://chat.sdcc.bnl.gov/star/pl/3tw7krm3a7by8cakfw9jo7inca)
 
-**The information contained herein is valid as of the time of writing July 15, 2025 and may change as the STAR software develops**
+**The information contained herein is valid as of the time of writing January 30, 2026 and may change as the STAR software develops**
 
 ## Summary
 
@@ -20,13 +22,15 @@ Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to fix issue with ST
 		1. In your *.cshrc* login script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
 		2. One line above where you just did the replacement in the *.cshrc* file add `setenv USE_NFS4 1`
 		3. If you have a *.login* script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
-  		4. Following those changes, you must then add the following to you login script. Add the lines `setup 64b` followed by `setup ROOT 6.20.08`. I believe this number may change as the versions of root6 change. 
-- STAR software doesn't run on Alma 9 and must use the container `singularity`
+  		- **NB:** If you want to use ROOT6 you must then add the following lines to your login script `setup 64b` followed by `setup ROOT 6.20.08`. I believe this number may change as the versions of root6 change.
+- STAR software doesn't run or compile on Alma 9 and must use the container `singularity`
 	- To use `singularity` first setup NFS environment following instructions above
-	- To run STAR code interactively on an Alma 9 node do `singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif csh`
-		- This will start the `singularity` environment for STAR and you can now run your STAR scripts normally
-		- if you want to run jobs using condor in the singularity container, compile all code in the singularity container. This will use all the libraries available in the container. It also uses ROOT5.
+	- To run or compile STAR code interactively on an Alma 9 node do `singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif csh`
+		- This will start the `singularity` environment for STAR
+			- You can now compile STAR software with `cons`
+			- You can now run your STAR scripts normally
 - Condor jobs must also be handled differently to use the container
+	- **NB:** If you want to run jobs using condor in the singularity container, compile all code in the singularity container. This will use all the libraries available in the container. It also uses ROOT5.
 	- For STAR scheduler
 		1. add to your xml  `<shell>singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif</shell>`
 		2. Submit using `star-submit-beta` or `star-submit-template-beta`
@@ -46,5 +50,6 @@ The Alma 9 nodes cannot be reached with the usual `rterm -i` command. You need t
 	* This happens for older version of star libraries, use newer version (>= SL22c) to avoid this error. 
 
 
-
+To check if in a `singularity` container check if environment variable *$SINGULARITY_ENVIRONMENT* exists
+To exit container use command `exit`
 
