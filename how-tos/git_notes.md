@@ -153,24 +153,23 @@ If a file shows up on `git status` after adding it to the ".gitignore" it could 
 
 <a name = "SparseCheckout"></a>
 ### Sparse Checkout
-Sparse checkout can be used to exclude files to download from a repository.
+Sparse checkout can be used to exclude files to download from a repository. I would highly recommend cone mode since when working with STAR software usually you need to include folders and specific files. Cone mode is great for this because it will include the specified folder and all subdirectories but the non-cone mode will not. In this mode the folders you add are the folders you want to use and keep. This will be applied to all branches of the repository.
 
 1. `git clone --no-checkout [url]`  
-2. Go to created directory
-3. `git config core.sparseCheckout true`  
-4. `cd .git` go to hidden git folder in the working tree  
-5. `cd info` go the *info* folder  
-6. Create or modify file named *sparse-checkout* with files to download  
-   - Supports linux wildcard expansions  
-   - Use `!` preceding a file name to exclude it  
-7. After setting up sparse checkout file run `git checkout` to grab the files  
-   - Any additional changes to *sparse-checkout* will require a `git checkout`  
- 
-Example: Want to check out only StSpinDbMaker and all files that start with "StFcs" in StRoot
-> StRoot/StSpinPool/StSpinDbMaker/  
-> StRoot/StFcs\*  
-
-Note that you first need to tell it grab everything in a folder first before you exclude things in that folder
+2. Go to created directory  
+3. `git sparse-checkout init --cone` sets up the local copy for sparse checkout mode  
+4. `git sparse-checkout set star/folder/to/get_1 /star/folder/to/get_2` sets the folders in STAR software you want to use. The `set` command needs to be done the first time and will remove all other folders from the sparse-checkout list. It will also create directories to preserve the existing directory structure   
+   + `git sparse-checkout list` will list the folders to be checked out  
+   + `git sparse-checkout add star/folder/to/add_1 star/folder/to/add_2" use this command to add more folders to the sparse checkout list  
+      - Calling `git sparse-checkout add` should automatically add the new folder to your local repository if not try using the command `git read-tree -mu HEAD` to sync your files  
+      - Sadly there is no "remove" from the sparse checkout list. You need to call `set` which will reset the sparse-checkout list and then you have to re-add. However, this shouldn't be an issue since git will take care of things where you add a parent or subdirectory to an existing one in your list  
+      - __NB:__ Be careful with linux wildcard expansions as cone mode will not expand wildcards to find folders. If you really want to use the wildcards you can always use it to generate a list from the main STAR repository at `$STAR` and then feed that into the `git sparse-checkout add` command  
+      - __NB:__ When working with branches if you add a new folder to the git repository make sure to add it to the git sparse-checkout list because otherwise when you switch out of that branch and back into it the `git sparse-checkout list` will tell it to ignore the new folder in that branch  
+      
+Helpful Sources:
+   - [git sparse checkout documentation](https://git-scm.com/docs/git-sparse-checkout)
+   - [Good explanation and tutorial of sparse checkout](https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/)
+   - [Nice tutorial on git sparse checkout](https://www.git-tower.com/learn/git/faq/git-sparse-checkout)
 
 ## Setting up ssh for Github
 The steps for setting up ssh on Github are similar to setting up ssh for BNL SDCC rcas machines. You need to generate a ssh public and private key pair. Then upload the public key hash to Github. The main difference is that there is nowhere to log in. You just need to ensure the private key is loaded into your ssh agent when you call git fetch/pull.
