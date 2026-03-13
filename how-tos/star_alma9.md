@@ -21,8 +21,8 @@ Ref: @[July 14, 2025] > [STAR Software Mattermost chat link to fix issue with ST
 	- To setup NFS disks do the following (note that the first three of these thing have to actually be done in your .login or .cshrc scripts. you cannot do this later. You can set up root later, I believe):
 		1. In your *.cshrc* login script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
 		2. One line above where you just did the replacement in the *.cshrc* file add `setenv USE_NFS4 1`
-		3. If you have a *.login* script replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group`
-  		- **NB:** If you want to use ROOT6 you must then add the following lines to your login script `setup 64b` followed by `setup ROOT 6.20.08`. I believe this number may change as the versions of root6 change.
+		3. You must create/modify a file in your home directory named *.login* (the dot is an important part of the file name) and replace `setenv GROUP_DIR /afs/rhic.bnl.gov/star/group` to `setenv GROUP_DIR /star/nfs4/AFS/star/group` or just add this line if you are creating a new file.  
+  		- **NB:** If you want to use ROOT6 you must then add the following lines to your login script `setup 64b` followed by `setup ROOT 6.20.08`. I believe this number may change as the versions of root6 change.  
 - STAR software doesn't run or compile on Alma 9 and must use the container `singularity`
 	- To use `singularity` first setup NFS environment following instructions above
 	- To run or compile STAR code interactively on an Alma 9 node do `singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif csh`
