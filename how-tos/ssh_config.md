@@ -60,8 +60,8 @@ Below is an example showing how to write the config file for connecting to RCF s
 - *MyRcfConnection* should be replaced with any name you want to give it
 - *username* should be replaced by your user name
 - */path/to/key* should be replaced by the location and name of your private key file.
-- By including the pseudo terminal you can quickly bypass gateway and go straight into analysis node with command `ssh MyRcfConnection rterm -i`
-	+ *rterm -i* can be replaced with *ssh rcasXXXX* where XXXX is the node to connect to.
+- By including the pseudo terminal you can quickly bypass gateway and go straight into analysis node with command `ssh MyRcfConnection term -i`
+	+ *term -i* can be replaced with *ssh starsubXX* where XX is the node to connect to.
 
 NoMachine Example
 ------------------

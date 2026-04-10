@@ -3,6 +3,8 @@ Logging into Brookhaven National Lab's (BNL) Computer System
 
 [Main help page for new users](https://www.sdcc.bnl.gov/information/getting-started)
 
+__EDIT (April 10, 2026): SDCC reached end of life for SL7 OS and now only Alma 9 nodes should be used. Instructions changed so that all "rcas" SL 7 nodes are now "starsub" - the Alma 9 nodes; and all the `rterm -i` are now `term -i`. I don't know if rterm will eventually be fixed to work for the Alma 9 nodes but term seems to work for now__
+
 Quick Start
 ----------
 
@@ -23,8 +25,8 @@ Connecting to BNL can be done using SSH or NoMachine. The NoMahcine is the prefe
 1. Load Private key into ssh-agent  
 	i. `ssh-add -l` to check status of ssh-agent program and if any keys are loaded  
 	ii. `ssh-add <path/to/private/key>` add private key to ssh-agent it will ask for password if not then you probably chose the pubic key (.pub)  
-2. Run `ssh -tA <username>@ssh.sdcc.bnl.gov rterm -i`  
-	- `ssh -tAX username@ssh.sdcc.bnl.gov rterm -i` to connect with X11 [see also](setup_xwindow.md)  
+2. Run `ssh -tA <username>@ssh.sdcc.bnl.gov term -i`  
+	- `ssh -tAX username@ssh.sdcc.bnl.gov term -i` to connect with X11 [see also](setup_xwindow.md)  
 3. Enter your kerberos password
 4. Enjoy :)
 
@@ -45,7 +47,7 @@ Connecting to BNL can be done using SSH or NoMachine. The NoMahcine is the prefe
 5. It will ask for another password if above worked. This is the MFA password. If not then there may be an issue with your computer account
 6. Select create a new desktop and/or pick your favorite vitual desktop *GNOME* or *KDE*
 7. Click *Automatically select a node*
-8. Start a terminal program and connect to computing nodes `rterm -i`
+8. Start a terminal program and connect to computing nodes `term -i`
 	- __IMPORTANT:Do not work on the nx gateway. You must ssh into the computing nodes even from NoMachine__
 	- `display` can be used to view *png* files for *pdf* installing a pdf reader is recommended.
 
@@ -82,9 +84,9 @@ These instructions will guide you through most of these steps with the relevant 
 		+ Where *username* should be replaced by the user name of your SDCC account.
 		+ Upon success you will see a warning message that shows you have logged into a Federal computer system and see a terminal prompt that includes text like *username@rsshXX*, where 'XX' will be replaced by whatever gateway number you have logged into.
 	- For NoMachine stop and follow instructions [here](rcf_remote_login.md) instead.  Once you get to the virtual desktop open a terminal and continue with step 4.
-4. On the gateway prompt, SSH into one of the analysis nodes named *rcasXXXX* where 'XXXX' needs to be replaced with the number of the node you want to log into.  Here I demonstrate STAR node *rcas6005*, `ssh rcas6005`
-	- If successful, you will be prompted for your password.  Type it in and you will be on the rcas nodes.
-	- There are several nodes that can be used by STAR analyzers.  The least populated node can be accessed by using the command `rterm -i` on the gateway prompt.  The drawback is that any command history, work, running processes, etc. executed on one node __**cannot**__ be accessed from another.
+4. On the gateway prompt, SSH into one of the analysis nodes named *starsubXX* where 'XX' needs to be replaced with the number of the node you want to log into.  Here I demonstrate STAR node *starsub05*, `ssh starsub05`
+	- If successful, you will be prompted for your password.  Type it in and you will be on the starsub nodes.
+	- There are several nodes that can be used by STAR analyzers.  The least populated node can be accessed by using the command `term -i` on the gateway prompt.  The drawback is that any command history, work, running processes, etc. executed on one node __**cannot**__ be accessed from another.
 5. Finished: You have logged into RCF nodes; Enjoy :)
 
 Useful SSH options
@@ -98,7 +100,7 @@ If you have no agent running or it is not working for some reason then you can s
 Port Forwarding allows you to specify a port for ssh to forward the connection to; effectively means that ssh will listen in on a different port.  This is needed for No Machine.  The option is '-L port:host:hostport'.  For RCF use hostport will always be the ssh port 22 and host will be *nx.rcf.rhic.bnl.gov*.  The port should be chosen to be a random high numbered open port (between 4096 and 65535) on your desktop.  e.g. for No Machine `ssh -L 7025:nx01.rcf.bnl.gov:22 username@ssh.sdcc.bnl.gov`.
 
 ### Pseudo-Terminal allocation to bypass gateway and go directly to RCAS node
-A pseudo-terminal is basically a terminal that will run in the background as the ssh connection is established.  The purpose of this is to execute a command on the remote machine before a prompt shows up.  This means you can bypass the gateway and go right into rcas nodes with one ssh command.  The ssh option for pseudo-terminal is '-t', e.g. `ssh -t username@ssh.sdcc.bnl.gov ssh rcas6005`
+A pseudo-terminal is basically a terminal that will run in the background as the ssh connection is established.  The purpose of this is to execute a command on the remote machine before a prompt shows up.  This means you can bypass the gateway and go right into starsub nodes with one ssh command.  The ssh option for pseudo-terminal is '-t', e.g. `ssh -t username@ssh.sdcc.bnl.gov ssh starsub05`
 
 ### SSH Agent forwarding
 SSH allows you to forward the loaded private keys from your running [ssh-agent](ssh_agent.md) so that if your key is needed beyond the gateway you can do this.  The SSH option for forwarding the keys from your running ssh-agent is '-A', e.g. `ssh -A username@ssh.sdcc.bnl.gov`
@@ -110,8 +112,8 @@ Any program that requires a graphical display will automatically start an "X" wi
 
 ### Combining Options
 SSH options can be combined.  You only need one *-* followed by option character.  You can also use multiple dashes separated by a space.  For instance pseudo-terminal allocation with ssh-agent forward and X11 forward can be done simultaneously with the following two ways.
-- Combined dashes: `ssh -tAX username@ssh.sdcc.bnl.gov ssh rcas6005`
-- Separate dashes `ssh -A -X username@ssh.sdcc.bnl.gov -t ssh rcas6005`
+- Combined dashes: `ssh -tAX username@ssh.sdcc.bnl.gov ssh starsub05`
+- Separate dashes `ssh -A -X username@ssh.sdcc.bnl.gov -t ssh starsub05`
 
 Both are acceptable.
 

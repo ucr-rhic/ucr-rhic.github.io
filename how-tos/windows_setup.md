@@ -155,7 +155,7 @@ function prompt
 
 3. Alias for explorer.exe for opening files and directories (Use Shell.Application COM in future?), [Src](https://dev.to/ofhouse/add-a-bash-like-autocomplete-to-your-powershell-4257): `New-Alias -Name open -Value 'Invoke-Item'`
 
-4. Function to directly log into rcas node. No arguments means least occupied node, single argument to indicate node number; e.g. `star_login 6010`.
+4. Function to directly log into starsub node. No arguments means least occupied node, single argument to indicate node number; e.g. `star_login 6010`.
 
 ```powershell
 function star_login
@@ -169,9 +169,9 @@ function star_login
 	process
 	{
 		#Source for checking valid parameter:https://stackoverflow.com/questions/48643250/how-to-check-if-a-powershell-optional-argument-was-set-by-caller
-		if( !($PSBoundParameters.ContainsKey('ServerNode')) ){ $ServerNode = "rterm -i" }
+		if( !($PSBoundParameters.ContainsKey('ServerNode')) ){ $ServerNode = "term -i" }
 		#STAR nodes are on 60XX where X is some digit (Help on Regex:https://powershell.org/forums/topic/regex-on-if-statement/)
-		elseif( $ServerNode -match "60\d{2}" ){ $ServerNode = "ssh rcas${ServerNode}" }
+		elseif( $ServerNode -match "60\d{2}" ){ $ServerNode = "ssh starsub${ServerNode}" }
 		else{ echo "Invalid input"; return; }
 		ssh user@ssh.sdcc.bnl.gov -At $ServerNode; #Here user would be your username and assumes you have the proper key loaded
 	}

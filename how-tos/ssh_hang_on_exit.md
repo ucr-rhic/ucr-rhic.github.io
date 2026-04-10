@@ -1,4 +1,4 @@
-Issue where ssh/rterm hangs on exit
+Issue where ssh/term hangs on exit
 ==================
 
 Description
@@ -6,15 +6,15 @@ Description
 
 @[November 14, 2022]
 
-I encountered this issue when I would use NoMachine to work at BNL computer systems (SDCC). The issue is that you log into NoMachine normally and then start a terminal session and ssh/rterm to a rcas node. On that node if you use emacs in graphical mode and then close emacs then try to exit the terminal it hangs until you kill the terminal with ctrl-c.
+I encountered this issue when I would use NoMachine to work at BNL computer systems (SDCC). The issue is that you log into NoMachine normally and then start a terminal session and ssh/term to a starsub node. On that node if you use emacs in graphical mode and then close emacs then try to exit the terminal it hangs until you kill the terminal with ctrl-c.
 
 ### Problem
 
-The problem is that emacs checks if a dbus daemon is already running by checking the envirnoment variable *$DBUS_SESSION_BUS_ADDRESS* if it is not defined then it calls `dbus-launch --auto-launch`. This starts the dbus daemon which is a program used to handle some system messages. NoMachine when it starts up has a running dbus daemon but after logging into the rcas nodes, rcas is not aware of the NoMachine dbus daemon and so emacs starts a new one.
+The problem is that emacs checks if a dbus daemon is already running by checking the envirnoment variable *$DBUS_SESSION_BUS_ADDRESS* if it is not defined then it calls `dbus-launch --auto-launch`. This starts the dbus daemon which is a program used to handle some system messages. NoMachine when it starts up has a running dbus daemon but after logging into the starsub nodes, starsub is not aware of the NoMachine dbus daemon and so emacs starts a new one.
 
 You can check for any dbus daemon processes using `ps -elu username | grep "dbus"`.
 
-__WARNING:If you kill the NoMachine dbus daemon it will cause you NoMachine session to terminate__
+__WARNING:If you kill the NoMachine dbus daemon it will cause your NoMachine session to terminate__
 
 ### Solution
 
@@ -27,7 +27,7 @@ if( ! $?DBUS_SESSION_BUS_ADDRESS ) then
 endif
 ```
 
-2. __UNTESTED__ Send NoMachine dbus daemon process to rcas
+2. __UNTESTED__ Send NoMachine dbus daemon process to starsub
 
 3. __UNTESTED__ Start a dbus daemon manually `dbus-launch --exit-with-session`
 

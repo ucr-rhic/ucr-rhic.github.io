@@ -172,7 +172,7 @@ Helpful Sources:
    - [Nice tutorial on git sparse checkout](https://www.git-tower.com/learn/git/faq/git-sparse-checkout)
 
 ## Setting up ssh for Github
-The steps for setting up ssh on Github are similar to setting up ssh for BNL SDCC rcas machines. You need to generate a ssh public and private key pair. Then upload the public key hash to Github. The main difference is that there is nowhere to log in. You just need to ensure the private key is loaded into your ssh agent when you call git fetch/pull.
+The steps for setting up ssh on Github are similar to setting up ssh for BNL SDCC starsub nodes. You need to generate a ssh public and private key pair. Then upload the public key hash to Github. The main difference is that there is nowhere to log in. You just need to ensure the private key is loaded into your ssh agent when you call git fetch/pull.
 
 Note that a ssh key is linked to your account not a specific repository. So the same public-private key pair can work on many repositories associated with your account.
 

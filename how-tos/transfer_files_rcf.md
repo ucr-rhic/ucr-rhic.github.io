@@ -59,7 +59,7 @@ SFTP can also be used to transfer individual files all in a single command from 
 - To copy files from RCF to local machine
 	- `sftp <username>@sftp.sdcc.bnl.gov:<Full Path>/<Source File> [Destination File Name]`
 	- If you want to use wildcards in *Source File* then then should enclose the whole location in double quotes i.e. `"<username>@sftp.sdcc.bnl.gov:<Full Path>/<Source File>"`
-	- Example: download all pdf files in a given rcas directory to your laptop
+	- Example: download all pdf files in a given starsub directory to your laptop
 	> `sftp "user@sftp.sdcc.bnl.gov:/remote/path/to/file/*.pdf" .`
 
 <a name="ScpLinux"></a>

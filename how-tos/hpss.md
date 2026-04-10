@@ -8,10 +8,10 @@
 
 Only use for exploring the file system. Puts you into an interactive session to explore your "HPSS" space. Most Linux commands will work as usual such as `pwd`, `ls`, `cd`, etc. albeit with some different options. There is also `save` and `get` commands to archive and grab files from HPSS respectively.
 
-Simply type `hsi` in SDCC rcas nodes to enter into interactive session
+Simply type `hsi` in SDCC starsub nodes to enter into interactive session
 
 #### Single line Examples:
-*These commands should be executed from SDCC rcas nodes only and not during interactive session*
+*These commands should be executed from SDCC starsub nodes only and not during interactive session*
 
 1. `hsi "pwd"` will print your home directory on HPSS  
 2. `hsi "ls"` will show files in your home directory on HPSS
