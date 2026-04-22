@@ -127,7 +127,7 @@ When finished making updates and want to create a pull request
 2. Open pull request on Github merging the branchname in your fork with the STAR main branch
    + You can keep adding commits and pushing to your fork to the branchname that you created the pull request for as you receive comments. These changes once pushed will update the pull request files automatically.
 3. Once the pull request is removed switch back to the main branch `git checkout main`
-4. Get upstream changes `git fetch upstream/main` and update local copy of "main" which should have your pull request
+4. Get upstream changes `git fetch upstream` and update local copy of "main" which should have your pull request
 5. Fast forward local copy to upstream copy `git merge upstream/main`
 6. Push updates of main to your fork `git push origin/main`
 7. If you want you can remove branchname now but you may want to keep it if you want to maintain the history of the commits since the pull request will be a single commit to the main branch of the STAR repository.
