@@ -160,7 +160,7 @@ Sparse checkout can be used to exclude files to download from a repository. I wo
 3. `git sparse-checkout init --cone` sets up the local copy for sparse checkout mode  
 4. `git sparse-checkout set star/folder/to/get_1 /star/folder/to/get_2` sets the folders in STAR software you want to use. The `set` command needs to be done the first time and will remove all other folders from the sparse-checkout list. It will also create directories to preserve the existing directory structure   
    + `git sparse-checkout list` will list the folders to be checked out  
-   + `git sparse-checkout add star/folder/to/add_1 star/folder/to/add_2" use this command to add more folders to the sparse checkout list  
+   + `git sparse-checkout add star/folder/to/add_1 star/folder/to/add_2` use this command to add more folders to the sparse checkout list  
       - Calling `git sparse-checkout add` should automatically add the new folder to your local repository if not try using the command `git read-tree -mu HEAD` to sync your files  
       - Sadly there is no "remove" from the sparse checkout list. You need to call `set` which will reset the sparse-checkout list and then you have to re-add. However, this shouldn't be an issue since git will take care of things where you add a parent or subdirectory to an existing one in your list  
       - __NB:__ Be careful with linux wildcard expansions as cone mode will not expand wildcards to find folders. If you really want to use the wildcards you can always use it to generate a list from the main STAR repository at `$STAR` and then feed that into the `git sparse-checkout add` command  
